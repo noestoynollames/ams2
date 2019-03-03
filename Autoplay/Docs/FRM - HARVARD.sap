@@ -1,0 +1,14 @@
+[System]
+Name=FRM
+Description=F - FRM
+Client=005
+[User]
+Name=-------
+Language=ES
+[Function]
+Title=- HARVARD
+Command=SESSION_MANAGER
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

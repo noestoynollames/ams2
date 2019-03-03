@@ -1,0 +1,16 @@
+COPIA OFFLINE DE GID (TIMON)
+
+Ejecutar en MILAGRO
+
+	nsrpolicy_force DesPre vmware_cti_ams incremental ider
+
+
+Revisar el estado del backup  desde MILAGRO.
+
+                 while true; do clear; nsrpolicy monitor -p DesPre -w vmware_cti_ams incremental ider; sleep 30; done
+
+
+Al arrancar JBOSS, se comprueba que ha arrancado bien si existe el siguiente fichero:
+
+                ls -l /opt/OpenIAM/jboss/jboss-as-7.1.1.Final/standalone/deployments/openiam-esb.war.deployed
+

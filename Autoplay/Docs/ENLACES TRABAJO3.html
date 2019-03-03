@@ -1,0 +1,1229 @@
+<html>
+<head><title>OPER</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n0">E N L A C E S    Y    A P L I C A C I O N E S<br>    O P E R A D O R E S</div>
+<div class="tooltip" id="n5">URL RECURSOSOPERACION</div>
+<div class="tooltip" id="n6">URL RECURSOSOPERACION<br>http://recursosoperacion</div>
+<div class="tooltip" id="n9">  CORREOS OUTLOOK</div>
+<div class="tooltip" id="n10">BALANCEO<br>ESCLAVO GDL</div>
+<div class="tooltip" id="n11">BALANCEO<br>MAESTRO GDL</div>
+<div class="tooltip" id="n12">ALTA EQUIPO<br>GDL-TR</div>
+<div class="tooltip" id="n13">ALTA TARJETA CONTRATAS<br>http://recursosoperacion/usi_Operacion/TARJETAS/Alta%20de%20tarjetas%20de%20contrata.msg</div>
+<div class="tooltip" id="n14">BAJA TARJETA CONTRATAS<br>http://recursosoperacion/usi_Operacion/TARJETAS/Baja%20de%20tarjetas%20de%20contrata.msg</div>
+<div class="tooltip" id="n15">TARJETAS INACTIVAS<br>http://recursosoperacion/usi_Operacion/TARJETAS/Tarjetas%20inactivas.msg</div>
+<div class="tooltip" id="n16">ESTADISTICAS<br>DE PAGO</div>
+<div class="tooltip" id="n17">PARTE DIARIO<br>COMMIT</div>
+<div class="tooltip" id="n18">INCIDENCIA SAGIR<br>HOJARUTA</div>
+<div class="tooltip" id="n19">REINICIO URGENTE<br>KIOSKOS (ARCO)</div>
+<div class="tooltip" id="n20">REINICIO 1<br>SERVER2 ARCO</div>
+<div class="tooltip" id="n21">REINICIO LOS 2<br>SERVER2 ARCO</div>
+<div class="tooltip" id="n22">GESTION DE TARJETAS<br>http://recursosoperacion/usi_Operacion/TARJETAS/Gestión%20de%20tarjetas%20de%20contrata.doc</div>
+<div class="tooltip" id="n23">MODULO  MM<br>http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/MODULO%20MM.msg</div>
+<div class="tooltip" id="n24">MODULO  PM<br>http://recursosoperacion/usi_Explotacion/Impresoras/MODULO%20PM.msg</div>
+<div class="tooltip" id="n25">GC Y ALMACENES<br>http://recursosoperacion/usi_Explotacion/Impresoras/GC%20y%20Almacenes.msg</div>
+<div class="tooltip" id="n26">Problemas con ficheros CTCCBTC<br>http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Problemas%20con%20ficheros%20CTCCBTC.msg</div>
+<div class="tooltip" id="n27">DISPONIBILIDAD DE MOREA<br>http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Disponibilidad%20de%20Morea.msg</div>
+<div class="tooltip" id="n28">REINICIO DE MOREA<br>http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Reinicio%20de%20Morea.msg</div>
+<div class="tooltip" id="n29">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Balanceo del Esclavo de GDL.msg</div>
+<div class="tooltip" id="n30">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Balanceo del Maestro de GDL.msg</div>
+<div class="tooltip" id="n31">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Alta de equipo en GDL-TR.msg</div>
+<div class="tooltip" id="n32">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio urgente de quioscos ARCO.msg</div>
+<div class="tooltip" id="n33">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio servidores ARCO.msg</div>
+<div class="tooltip" id="n34">D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla1 Pérdida de Servicio Crítico.msg</div>
+<div class="tooltip" id="n35">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Incidencia en SAGIR en la hojaruta.msg</div>
+<div class="tooltip" id="n36">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio de Morea.msg</div>
+<div class="tooltip" id="n37">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Disponibilidad de Morea.msg</div>
+<div class="tooltip" id="n38">D:\OPER\CORREOS\INFORMACION INCIDENCIAS NO CRITICAS\Incidencias para incluir en el Parte Diario de COMMIT.msg</div>
+<div class="tooltip" id="n39">D:\OPER\CORREOS\TARJETAS\Alta de tarjetas de contrata.msg</div>
+<div class="tooltip" id="n40">D:\OPER\CORREOS\TARJETAS\Baja de tarjetas de contrata.msg</div>
+<div class="tooltip" id="n41">D:\OPER\CORREOS\TARJETAS\Tarjetas inactivas.msg</div>
+<div class="tooltip" id="n42">D:\OPER\CORREOS\IMPRESORAS\GC y Almacenes.msg</div>
+<div class="tooltip" id="n43">D:\OPER\CORREOS\IMPRESORAS\MODULO MM.msg</div>
+<div class="tooltip" id="n44">D:\OPER\CORREOS\IMPRESORAS\MODULO PM.msg</div>
+<div class="tooltip" id="n45">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Problemas con ficheros CTCCBTC.msg</div>
+<div class="tooltip" id="n46">D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Estadísticas de Pago Electrónico.msg</div>
+<div class="tooltip" id="n47">FLUJO BAJA TARJETAS CONTRATAS<br>D:\OPER\FLUJOS\ALTAS_BAJAS_INACTIVAS  DE TARJETAS CONTRATAS.html</div>
+<div class="tooltip" id="n48">IMPRESORAS<br> </div>
+<div class="tooltip" id="n49">ENLACE WEB A IMPRESORA IMP30449</div>
+<div class="tooltip" id="n50">CORDBARSAP</div>
+<div class="tooltip" id="n51">DRIVER HP<br>IMPRESORA</div>
+<div class="tooltip" id="n52">CMDB PRO<br>http://terni/arsys/shared/login.jsp?/arsys/home</div>
+<div class="tooltip" id="n53">IMPRESION<br>CODIGO<br>BARRAS</div>
+<div class="tooltip" id="n54">INVVENTARIO IMPRESORAS</div>
+<div class="tooltip" id="n55">IMPRESORAS CRM.<br>http://recursosoperacion/usi_Explotacion/Impresoras/Impresoras%20CRM.doc</div>
+<div class="tooltip" id="n56">BAJA IMPRESORA EN SAP<br>http://recursosoperacion/usi_Explotacion/Impresoras/Baja%20de%20impresoras%20en%20SAP.doc</div>
+<div class="tooltip" id="n57">ALTA IMPRESORA EN SAP<br>http://recursosoperacion/usi_Explotacion/Impresoras/Alta%20de%20impresoras%20en%20SAP.doc</div>
+<div class="tooltip" id="n58">TIPOS DE DISPOSITIVOS<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Impresoras/tipos_dispositivos_SAP.docx&action=default&DefaultItemOpen=1<br></div>
+<div class="tooltip" id="n59">ALTA / MODIFICACION IMPRESORA EN SAP<br>D:\OPER\FLUJOS\ALTA_MODIFICACION_IMPRESORAS_SAP.html</div>
+<div class="tooltip" id="n60">MANUAL OPERADORES - GESTION DE IDENTIDADES.<br>D:\OPER\MANUALES\GESTION DE IDENTIDADES\SGId_Manual cambio contraseñas para OPERADORES.pdf</div>
+<div class="tooltip" id="n61">VPN OFICINA<br>REMOTA<br></div>
+<div class="tooltip" id="n62">ENCOREIN<br>D:\OPER\EJECUTABLES\Encorein_ASI.exe - Acceso directo.lnk</div>
+<div class="tooltip" id="n63">KEEPASS<br>D:\OPER\EJECUTABLES\KeePass-2.30 (Portable)\KeePass.exe</div>
+<div class="tooltip" id="n64">GESTION<br>IDENTIDADES</div>
+<div class="tooltip" id="n65">MONITORIZACION<br>VPN</div>
+<div class="tooltip" id="n66">VPN-DEFINICION<br>NUEVO PIN</div>
+<div class="tooltip" id="n67">CORREOS CIFRADOS CNPIC<br>http://RECURSOSOPERACION/usi_Seguridad%20informatica/CNPIC/Procedimiento%20Correos%20Cifrados%20CNPIC.doc</div>
+<div class="tooltip" id="n68">Actuación ante la llegada de correos <br>cifrados del CNPIC</div>
+<div class="tooltip" id="n69">CNPIC<br>ESC-60711</div>
+<div class="tooltip" id="n70">YAKIMA-VPN DESBLOQUEO<br>https://yakima.metromadrid.net/</div>
+<div class="tooltip" id="n71">PULMAN-VPN DESBLOQUEO</div>
+<div class="tooltip" id="n72">DEFINICION PIN VPN TOKEN SOFT.<br>WINDOWS<br>D:\OPER\MANUALES\VPN\Definicionde PIN con TS para Windows.pdf</div>
+<div class="tooltip" id="n73">CORREOS CIFRADOS CNPIC</div>
+<div class="tooltip" id="n74">GESTION IDENTIDADES ¡¡New!!<br>https://sgid.metromadrid.net/selfservice</div>
+<div class="tooltip" id="n75">MANUAL OPER GID ¡¡NEW!!<br>D:\OPER\MANUALES\GESTION DE IDENTIDADES\SGId_Manual cambio contraseñas para OPERADORES.pdf</div>
+<div class="tooltip" id="n76">VPN CANAL<br>EMPRESAS<br>https://canalempresas.metromadrid.es/dana-na/auth/url_1/welcome.cgi<br></div>
+<div class="tooltip" id="n77">Llaver root<br>\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\llavero.kdbx</div>
+<div class="tooltip" id="n78">LLAVERO NUESTRO<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\llavero.kdbx</div>
+<div class="tooltip" id="n79">D:\OPER\FLUJOS\DEFINICION PIN EN VPN.html</div>
+<div class="tooltip" id="n80">SEGUNDA URL PARA DESBLOQUEO <br>VPN EN YAKIMA<br>D:\OPER\CORREOS\SEGURIDAD\Libro de Sala ASI - SEGURIDAD - VPN - Criticidad Normal - Estado Cerrado.msg</div>
+<div class="tooltip" id="n81">EXCELLS</div>
+<div class="tooltip" id="n82">ACCESOS.COM<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesos_com.xlsm</div>
+<div class="tooltip" id="n83">BD_ESTADISTICAS<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\bases de datos\BD_estadisticas_nueva.xls</div>
+<div class="tooltip" id="n84">INVVENTARIO IMPRESORAS</div>
+<div class="tooltip" id="n85">MANUAL ACCESOS SEGURIDAD<br>http://RECURSOSOPERACION/usi_Explotacion/Relojes/accesos_Seguridad.docx</div>
+<div class="tooltip" id="n86">MANUAL ESTADISTICAS<br>BBDD (AUTOMATICO)<br>http://RECURSOSOPERACION/usi_Operacion/Tareas%20habituales/Realización%20de%20estadísticas%20de%20Base%20de%20Datos%20(Proceso%20automático).doc</div>
+<div class="tooltip" id="n87">MODULOS DE SAP<br>D:\OPER\EXCELL´S\Modulos de SAP en Metro.xls</div>
+<div class="tooltip" id="n88">TRAER_SERVIDOR<br>D:\OPER\EXCELL´S\traer_servidor.xlsm</div>
+<div class="tooltip" id="n89">SERVIDORES<br>(resumen)<br>\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\SERVIDORES resumen.xls</div>
+<div class="tooltip" id="n90">SERVIDORES (UNIX)<br>\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\SERVIDORES UNIX.XLS</div>
+<div class="tooltip" id="n91">NIS2 IPA ESTADO MIGRACION<br>\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\NIS2IPAEstadoMigracion.xls</div>
+<div class="tooltip" id="n92">ACCESOSRelojes.bat 32 bits<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosR</div>
+<div class="tooltip" id="n93">ACCESOSRelojes.bat 64 bits<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosRelojes64bits.bat</div>
+<div class="tooltip" id="n94">TURNOS 2016<br>http://recursosoperacion/usi_Operacion/Turnos%202016.xls?Web=1</div>
+<div class="tooltip" id="n95">TURNOS 2016<br>\\RECURSOSOPERACION\usi_Operacion\Turnos 2016.xls</div>
+<div class="tooltip" id="n96">TARJETAS CONTRATAS<br>http://recursosoperacion/usi_Operacion/TARJETAS/Tarjetas%20contratas.xls</div>
+<div class="tooltip" id="n97">INVENTARIO BACKUP</div>
+<div class="tooltip" id="n98">COPIA SEMANAL (Mañana - Tarde)<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/NUEVA%20Copia%20Semanal%20Ma%C3%B1ana-Tarde.xls&action=default</div>
+<div class="tooltip" id="n99">Envio diario de accesos relojes a seguridad.<br>D:\OPER\FLUJOS\ENVIO_DIARIO_ACCESOS_RELOJES.html</div>
+<div class="tooltip" id="n100">COPIA SEMANAL(Noche)<br>http://recursosoperacion/usi_Operacion/NUEVA%20Copia%20Semanal%20Noche.xls?Web=1</div>
+<div class="tooltip" id="n101">TARJETAS CONTRATAS<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/TARJETAS/Tarjetas%20contratas.xls&action=default</div>
+<div class="tooltip" id="n102">TELEFONOS<br></div>
+<div class="tooltip" id="n103">TELEFONOShttp://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Tel%C3%A9fonos.xls&action=default</div>
+<div class="tooltip" id="n104">TELEFONO INCIDENCIAS<br>http://recursosoperacion/usi_Explotacion/telefonos_incidencias.xls</div>
+<div class="tooltip" id="n105">TELEFONOS GUARDIAS 2016<br>D:\OPER\EXCELL´S\Tecnico de guardia 2016.xls</div>
+<div class="tooltip" id="n106">Teléfonos<br>D:\OPER\EXCELL´S\Teléfonos.xls</div>
+<div class="tooltip" id="n107">Teléfonos<br>D:\OPER\EXCELL´S\telefonos_incidencias.xls</div>
+<div class="tooltip" id="n108">TECNICOS  DE GUARDIA 2016<br>http://recursosoperacion/usi_Operacion/Tecnico%20de%20guardia%202016.xls?Web=1<br><br></div>
+<div class="tooltip" id="n109">TECNICOS  DE GUARDIA 2016<br>http://recursosoperacion/usi_Operacion/Tecnico%20de%20guardia%202016.xls</div>
+<div class="tooltip" id="n110">TELEFONOS - UTE - IECISA - SERMICRO<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Telefonos%20UTE%20IECISA%20SERMICRO.xlsx&action=default</div>
+<div class="tooltip" id="n111"><br>http://recursosoperacion/usi_Operacion/Telefonos%20UTE%20IECISA%20SERMICRO.xlsx?Web=1</div>
+<div class="tooltip" id="n112">INVENTARIO BACKUP<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Inventario%20de%20medios%20de%20backup%20de%20Windows.xls&action=default</div>
+<div class="tooltip" id="n113">SERVIDORES.XLS<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\servidores.xls</div>
+<div class="tooltip" id="n114">accesosCristalia64bits.bat 64 bits<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosCristalia64bits.bat</div>
+<div class="tooltip" id="n115">accesosCristalia.bat <br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosCristalia.bat</div>
+<div class="tooltip" id="n116">MANUAL ACCESOS SEGURIDAD<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Relojes/accesos_Cristalia.docx&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n117">PAGO ELECTRONICO</div>
+<div class="tooltip" id="n118">POTOSI1 (4097)</div>
+<div class="tooltip" id="n119">POTOSI2 (4098)</div>
+<div class="tooltip" id="n120">ESQUEMA PAGO<br>ELECTRONICO</div>
+<div class="tooltip" id="n121">MONITORIZACION SECEBIT<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/BIT/SECEBIT.%20Monitorizaci%C3%B3n.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n122">PAGO NETPLUS EDITRAN</div>
+<div class="tooltip" id="n123">GESREVE<br>ADMINISTRACION</div>
+<div class="tooltip" id="n124">OPERACION PAGO ELECTRONICO<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Editran/Manual%20de%20Operaci%C3%B3n%20v.0.2.docx&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n125">ENVIO DIARIO<br>FICHEROS</div>
+<div class="tooltip" id="n126">PROCEDIMIENTO<br>ARRANQUE PROCESOS<br>GESREVE / GESPEAJE</div>
+<div class="tooltip" id="n127">CONSOLA NAGIOS</div>
+<div class="tooltip" id="n128">INCIDENCIAS CON EL<br>MONTAJE DEL TUNEL</div>
+<div class="tooltip" id="n129">DIAGRAMA FLUJO REDALDIA<br>D:\OPER\FLUJOS\INCIDENCIAS CON EL MONTAJE DEL TUNEL.html</div>
+<div class="tooltip" id="n130">EDITRAN FICHEROS<br>ENVIO Y RECEPCION</div>
+<div class="tooltip" id="n131">F</div>
+<div class="tooltip" id="n132">DIAGRAMA DE RED<br>SESIONES Y APLIC.<br>DE EDITRAN</div>
+<div class="tooltip" id="n133">F</div>
+<div class="tooltip" id="n134">EQUIPOS PARA VENTA DE TARJETAS DE<br>TRANSPORTE SIN CONTACTO.<br>http://recursosoperacion/usi_Explotacion/Venta%20y%20peaje/BIT/Equipos%20para%20venta%20de%20tarjetas%20de%20transporte%20sin%20contacto.doc</div>
+<div class="tooltip" id="n135">TRANSACCIONES PENDIENTES SUBIR<br>BBDD GESREVE</div>
+<div class="tooltip" id="n136">MONITORIZACION SECEBIT<br>http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/BIT/SECEBIT.%20Monitorización.doc</div>
+<div class="tooltip" id="n137">D:\OPER\FLUJOS\INCIDENCIAS_OPERACIONES_TARJETAS.html</div>
+<div class="tooltip" id="n138">D:\OPER\FLUJOS\INCIDENCIAS_OPERACIONES_TARJETAS.html</div>
+<div class="tooltip" id="n139">No hay lista negra para hoy (telesecebit)</div>
+<div class="tooltip" id="n140">Carga de listas negras.<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/BIT/Ejecutar%20la%20carga%20de%20las%20listas%20negras%20manualmente.docx&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n141">ENVIO DIARIO FICHEROS<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Netplus/Estadisticas%20diarias%20de%20EMV.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n142">S   A   P</div>
+<div class="tooltip" id="n143">SERVIDORES SAP<br>PRODUCCION<br>D:\OPER\FLUJOS\SERVIDORES SAP SPR.png</div>
+<div class="tooltip" id="n144">SU01<br>D:\OPER\S  A  P\SPR SU01 - ACTUALIZACIÓN USUARIOS.sap</div>
+<div class="tooltip" id="n145">SMTS<br>D:\OPER\S  A  P\SPR SMTS -  ORDENES DE TRANSPORTE.sap</div>
+<div class="tooltip" id="n146">SM37<br>D:\OPER\S  A  P\SPR SM37 -  JOBS RESUMEN.sap</div>
+<div class="tooltip" id="n147">MODULOS DE SAP<br>D:\OPER\EXCELL´S\Modulos de SAP en Metro.xls</div>
+<div class="tooltip" id="n148">D:\OPER\CORREOS\SAP\Nuevo módulo en SAP. SD (Comercial (Gestión de Ventas))..msg</div>
+<div class="tooltip" id="n149">ZLAK</div>
+<div class="tooltip" id="n150">ALTA/BAJA EQUIPOS GDL (ZLAK)</div>
+<div class="tooltip" id="n151">JOB ABORTADO<br>http://RECURSOSOPERACION/usi_Explotacion/SAP.%20Generico/Problemática%20con%20jobs/Job%20abortado.doc</div>
+<div class="tooltip" id="n152">GEMA PROCESOS EMX Y TOMCAT<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Abap/GEMA/GEMA.%20Procesos%20EMX%20y%20TOMCAT.doc</div>
+<div class="tooltip" id="n153">RCS O.TRANSPORTES (CONFLICTOS)<br>https://napa.metromadrid.net:8443/rcs</div>
+<div class="tooltip" id="n154">GEMA-PROTAL WEB<br>https://gemacti.metromadrid.net/gema-web/login.do;jsessionid=C95852D4330BF0950217D88AB1056CC2</div>
+<div class="tooltip" id="n155">INFORMACION DE JOB<br>http://napa.metromadrid.net:8002/jobs</div>
+<div class="tooltip" id="n156">INFORMACION DE JOBS</div>
+<div class="tooltip" id="n157">SPR - PRODUBD</div>
+<div class="tooltip" id="n158">PRP - PREPROD1</div>
+<div class="tooltip" id="n159">BWP - RIOTINTO</div>
+<div class="tooltip" id="n160">RPP - SARATOGA<br>D:\OPER\S  A  P\RPP SAP.sap</div>
+<div class="tooltip" id="n161">PLP (CHICAGO)<br>D:\OPER\S  A  P\PLP SAP.sap</div>
+<div class="tooltip" id="n162">SMP (NAPA)</div>
+<div class="tooltip" id="n163">BWD (PASADENA)</div>
+<div class="tooltip" id="n164">FRM (HARVARD)</div>
+<div class="tooltip" id="n165">PLD (UTAH)<br></div>
+<div class="tooltip" id="n166">DSR (SAPDESA)<br></div>
+<div class="tooltip" id="n167">SAPD GESTION DE SPOOL (IMPRESORAS)</div>
+<div class="tooltip" id="n168">SP01 CONTROL DE SALIDA (IMPRESORAS)</div>
+<div class="tooltip" id="n169">SM30 CONTROL TARJETAS CONTRATAS</div>
+<div class="tooltip" id="n170">SE16 VISUALIZ. DATOS TARJETAS CONTRATAS</div>
+<div class="tooltip" id="n171">RUTA: saplogon.ini<br>C:\Program Files\SAP\FrontEnd\SAPgui\</div>
+<div class="tooltip" id="n172">LEEME_saplogon_ini.TXT (SAP)<br>D:\OPER\EJECUTABLES\leeme_saplogon_ini.txt</div>
+<div class="tooltip" id="n173">APROBAR HORARIOS (IMPUTACIONES)<br>D:\OPER\S  A  P\SPR CAPP - Aprobar horarios.sap</div>
+<div class="tooltip" id="n174">Jobs relacionados con la nómina: si aborta<br>en periodo de liquidación NO hay que<br>avisar, solo hay que enviar correo<br>informativo al grupo “soporte SAP-HR”.</div>
+<div class="tooltip" id="n175">CAIDAS CRITICAS</div>
+<div class="tooltip" id="n176">LISTAS DE CORREO<br>CAIDAS CRITICAS </div>
+<div class="tooltip" id="n177">URL:DIAGRAMA FLUJO CAIDAS CRITICAS</div>
+<div class="tooltip" id="n178">PERDIDA SERVICIO<br>CRITICO</div>
+<div class="tooltip" id="n179">PERDIDA SERVICIO DEGRADADO<br>NO EN SHAREPOINT, SOLO EN LOCAL<br>D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Servicio degradado .msg</div>
+<div class="tooltip" id="n180">RESTAURACION<br>DE SERVICIO</div>
+<div class="tooltip" id="n181">INFORME DE<br>SITUACION</div>
+<div class="tooltip" id="n182">MANUAL CAIDAS<br>CRITICAS<br>http://recursosoperacion/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Procedimiento%20por%20pérdida%20de%20servicios%20críticos%20v2.3.doc</div>
+<div class="tooltip" id="n183">INCIDENCIAS EN SISTEMAS INFORMÁTICOS PARA INCLUIR EN EL PARTE DIARIO DE COMMIT.<br><br>http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Incidencias%20en%20Sistemas%20Informáticos%20para%20incluir%20en%20el%20Parte%20Diario%20de%20COMMIT.msg</div>
+<div class="tooltip" id="n184">D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla1 Pérdida de Servicio Crítico.msg</div>
+<div class="tooltip" id="n185">D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Servicio degradado .msg</div>
+<div class="tooltip" id="n186">D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla2 Informe de situación.msg</div>
+<div class="tooltip" id="n187">D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla3 Restauración del Servicio.msg</div>
+<div class="tooltip" id="n188">ORGANIGRA DEL SERVICIO<br>D:\OPER\ORGANIGRAMA DEL SERVICIO.png</div>
+<div class="tooltip" id="n189">LISTA DE DISTRIBUCION DE PERSONAS APLICACIONES-SERVICIOS (UNIX-WINDOWS v2.3)<br>http://recursosoperacion/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Lista%20distribución%20de%20personas%20aplicaciones-servicios%20UNIX_Windows%20v2.3.xls</div>
+<div class="tooltip" id="n190">MENSAJERIA</div>
+<div class="tooltip" id="n191">NOSAP (4093)</div>
+<div class="tooltip" id="n192">CONSOLA SMS<br>http://consolasms.metromadrid.net</div>
+<div class="tooltip" id="n193">MANUAL EXPLOTACION ICARO<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ICARO%20Mobile/Manual%20de%20Explotación%20ICARO.doc</div>
+<div class="tooltip" id="n194">MANUAL ARQUITECTURA ICARO<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ICARO%20Mobile/Manual%20común%20de%20Arquitectura%20ICARO.doc</div>
+<div class="tooltip" id="n195">MANUAL EXPLOTACION MOVMET V3.1<br>D:\OPER\MANUALES\Manual de Explotación MOVMET v1 1 (3).doc</div>
+<div class="tooltip" id="n196">MANUAL EXPLOTACION NETRO<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/NETRO%20Notificaciones%20Push/Manual%20de%20Explotación%20NETRO.doc</div>
+<div class="tooltip" id="n197">DOCUMENTO MSTROSMS<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/MetroSMS/MetroSMS-Manual%20Explotación%20v2.2.doc</div>
+<div class="tooltip" id="n198">DIAGRAMA ARTQUITECTURA MESTROSMS<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/MetroSMS/Diagrama%20MetroSMS.jpg</div>
+<div class="tooltip" id="n199">COMRPOBACIÓN DE CONECION CON OPERADOR EXTERNO LLEIDA.<br>TEXTO QUE TIENE QUE DAR PARA SER<br>CORRECTO:<br><br><?xml version="1.0" encoding="ISO-8859-1"?><br>-<result><action>NULL</action><status>-1</status><msg>Invalid XML</msg></result></div>
+<div class="tooltip" id="n200">URL NETRO PRO<br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")</div>
+<div class="tooltip" id="n201">NETRO Pre  T E S T<br>URL NETRO Pre<br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")</div>
+<div class="tooltip" id="n202">MOVMET APLIC.EXTER.MOVMETREG<br><br>URL MOVMET:<br>https://serviciosmovilidad.metromadrid.es/movmetreg/  <br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")</div>
+<div class="tooltip" id="n203">NETRO Des  T E S T<br>URL NETRO Des<br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")</div>
+<div class="tooltip" id="n204">MOVMET APLIC.EXTER.MOVGETNOTICIAS<br>URL MOVMET<br>https://serviciosmovilidad.metromadrid.es/movgetnoticias/<br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")</div>
+<div class="tooltip" id="n205">MOVMET APLIC.INTERNA<br>FREEPORT / PRO<br>https://consolanoticias.metromadrid.net/consolaNoticias/login.xhtml </div>
+<div class="tooltip" id="n206">URL ICARO PRO<br>(VERIFICA QUE LA APLICACION <br>FUNCIONA , DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")<br><br>https://icaro.metromadrid.net/Icaro</div>
+<div class="tooltip" id="n207">URL ICARO PRO<br>(VERIFICA QUE LA APLICACION <br>FUNCIONA , DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")<br><br>https://icaropre.metromadrid.net/Icaro</div>
+<div class="tooltip" id="n208">URL ICARO DES<br>(VERIFICA QUE LA APLICACION <br>FUNCIONA , DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")<br><br>https://icarodes.metromadrid.net/Icaro</div>
+<div class="tooltip" id="n209">TarjetaPost<br>Pro<br>Test Apli.<br>(VERIFICA QUE LA APLICACION <br>FUNCIONA , DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")<br></div>
+<div class="tooltip" id="n210">TarjetaPost<br>DES<br>Test Apli.<br>(VERIFICA QUE LA APLICACION <br>FUNCIONA , DEVUELVE<br>"HELLO WORLD" o ""IT WORKS")<br>http://dayton:8080/tarjetapost/</div>
+<div class="tooltip" id="n211">NOTIGESTION<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Movilidad/Notigestion/Notigestión.doc</div>
+<div class="tooltip" id="n212">GESTION MENSAJERIA BROKERSMS<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Broker%20SMS/Gestión%20mensajería.%20Broker%20SMS.doc</div>
+<div class="tooltip" id="n213">MANUAL CONSOLA SMS<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Consola%20SMS/Gesti%C3%B3n%20mensajer%C3%ADa.%20consola%20SMS.doc</div>
+<div class="tooltip" id="n214">SCRIPT QUE VIGILA AGENTE EN NOSAP</div>
+<div class="tooltip" id="n215">Certificado y manual de Movmet</div>
+<div class="tooltip" id="n216">L D A P</div>
+<div class="tooltip" id="n217">BOSTON2 (4064) ELDORADO</div>
+<div class="tooltip" id="n218">BOSTON1 (4063) ELDORADO</div>
+<div class="tooltip" id="n219">CAMPECHE (4072)</div>
+<div class="tooltip" id="n220">TICUL (5202) - LAPLATA</div>
+<div class="tooltip" id="n221">LDAP<br>BALANCEADOR</div>
+<div class="tooltip" id="n222">LDAP NODO1<br>(BARUTA)</div>
+<div class="tooltip" id="n223">LDAP NODO1<br>(TOPEKA)</div>
+<div class="tooltip" id="n224">JXPLORER<br>LDAP</div>
+<div class="tooltip" id="n225">GESTION<br>IDENTIDADES</div>
+<div class="tooltip" id="n226">DEFINICION NUEVO<br>PIN CLIENTE<br>PULSE VPN</div>
+<div class="tooltip" id="n227">LDADP PRODUCCION USUARIOS<br>https://amldap.bcm.metromadrid.net/amserver/UI/Login?realm=usuarios</div>
+<div class="tooltip" id="n228">GESTION IDENTIDADES ¡¡New!!<br>https://sgid.metromadrid.net/selfservice</div>
+<div class="tooltip" id="n229">RESUMEN LADAP Y DESBLOQUEO USUARIOS.<br>http://recursosoperacion/usi_Seguridad%20informatica/LDAP%20OPENDJ/RESUMEN%20LDAP%20y%20desbloqueo%20Usuarios.doc</div>
+<div class="tooltip" id="n230">PLANO CPD-CCS<br>D:\OPER\CPD-CCS.jpg</div>
+<div class="tooltip" id="n231">PLANO CPD-CTI<br>D:\OPER\CPD-CTI.jpg</div>
+<div class="tooltip" id="n232">CAMPO DE LAS NACIONES <br>DISTRIBUCION EN PLANTA DE LAS DEPENDENCIAS</div>
+<div class="tooltip" id="n233">CMD (LINEA COMANDOS)</div>
+<div class="tooltip" id="n234">ANDEN CENTRAL</div>
+<div class="tooltip" id="n235">ANDEN<br>LATERAL</div>
+<div class="tooltip" id="n236">MANUAL<br>SHAREPOINT</div>
+<div class="tooltip" id="n237">CONEXIONADO<br>ELECTRICO-CPD</div>
+<div class="tooltip" id="n238">PORTAL EMPLEADO<br>CAMBIO PASSW.</div>
+<div class="tooltip" id="n239">PROCEDIMIENTO OPERACION</div>
+<div class="tooltip" id="n240">MAPA SISTEMAS MULTIPLATAFORMA<br>http://RECURSOSOPERACION/usi_Explotacion/Mapa%20Sistemas.xmind</div>
+<div class="tooltip" id="n242">MONITORIZACION</div>
+<div class="tooltip" id="n243">VIA2 (5000)</div>
+<div class="tooltip" id="n244">VIA1 (4099)</div>
+<div class="tooltip" id="n245">MOREA2 (4091)</div>
+<div class="tooltip" id="n246">MOREA1 (4090)</div>
+<div class="tooltip" id="n247">TERMINAL SERVER</div>
+<div class="tooltip" id="n248">CMDB</div>
+<div class="tooltip" id="n249">CORDBARSAP</div>
+<div class="tooltip" id="n250">JIRA</div>
+<div class="tooltip" id="n251">GEOMETRO<br>http://geometro.metromadrid.net:8080/GeoMetro/visor.jsp#</div>
+<div class="tooltip" id="n252">OMU<br>http://quevedo:8081/ITO_OP/ito_op_applet.html</div>
+<div class="tooltip" id="n253">PLATON - EXPLOTACION - CONTENIDOS</div>
+<div class="tooltip" id="n254">CONSOLA MOREA PRO<br>D:\OPER\EJECUTABLES\ConsolaMorea.jar</div>
+<div class="tooltip" id="n255">VER FIRMA<br>NOMINA PRO</div>
+<div class="tooltip" id="n256">SDNE INVENTARIO<br>http://sdne/index.asp</div>
+<div class="tooltip" id="n257">ESTADO<br>INCIDENCIAS CRM</div>
+<div class="tooltip" id="n258">CONSOLA GDL<br>D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk<br></div>
+<div class="tooltip" id="n259">ARCServe</div>
+<div class="tooltip" id="n260">DATAPROTECTOR</div>
+<div class="tooltip" id="n261">LOGS COPIAS JENA Y CHIETI<br>D:\OPER\EJECUTABLES\Backup Windows\Jena y Chieti.cmd - Acceso directo.lnk</div>
+<div class="tooltip" id="n262">VMWARE VIRTUAL-GOUDA<br>C:\Program Files\VMware\Infrastructure\Virtual Infrastructure Client\Launcher\VpxClient.exe</div>
+<div class="tooltip" id="n263">CAREREPORTS<br>C:\Program Files\CA\ARCserve Backup\careports.exe</div>
+<div class="tooltip" id="n264">BUENAVISTA<br>CONSOLANW (REINICIO DE CONSOLA)</div>
+<div class="tooltip" id="n265">NETWORKER<br>D:\OPER\EJECUTABLES\networker.BAT</div>
+<div class="tooltip" id="n266">SCOM new!!<br>http://vsr-sql-report/OperationsManager/#/overview(name=Microsoft.SystemCenter.Monitoring.ViewFolder.Root)</div>
+<div class="tooltip" id="n267">LEEME.TXT (GDL)<br>D:\OPER\EJECUTABLES\TUTO_INSTALAR _CONSOLA_GD-TR-LEEME.txt</div>
+<div class="tooltip" id="n268">MANUAL BACKUP WINDOWS<br><br>http://recursosoperacion/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Windows/Manual%20de%20Operación%20del%20entorno%20de%20backup%20Windows.doc</div>
+<div class="tooltip" id="n269">D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html</div>
+<div class="tooltip" id="n270">VMWARE VSR-VCENTER (POR WEB)<br>https://vsr-vcenter/ui/#</div>
+<div class="tooltip" id="n271">CAIDA AUTOMATICOS SYMMETRYX CTI<br>D:\OPER\CORREOS\INCIDENCIAS ELECTRICAS\Apagado repetido de SYMMETRYX en CTI.msg</div>
+<div class="tooltip" id="n272">CESTRACK</div>
+<div class="tooltip" id="n273">CONSOLA GDL<br>C:\Consola de Monitorizacion GDL-TR\produccion\Acceso directo a Monitorizacion_GDL_TR.lnk</div>
+<div class="tooltip" id="n274">Mensaje critical de Networker (Petición de montaje)</div>
+<div class="tooltip" id="n275">Comprobacion desde la global de ocupacion arch</div>
+<div class="tooltip" id="n276">http://tesla</div>
+<div class="tooltip" id="n277">RELOJES DE FICHAR</div>
+<div class="tooltip" id="n278">INFORMACION RELOJES DE FICHAR<br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Sistemas Multiplataforma\Aplicaciones\Impresoras y relojes\relojes\terminales1.xlsx</div>
+<div class="tooltip" id="n279">INCIDENCIAS RELOJES CRM<br>http://RECURSOSOPERACION/usi_Explotacion/Relojes/Incidencias%20de%20relojes%20en%20CRM.doc</div>
+<div class="tooltip" id="n280">RELOJ FICHAJES (DA LAS GRACIAS)<br>http://RECURSOSOPERACION/usi_Explotacion/Relojes/El%20reloj%20de%20fichajes%20da%20las%20gracias.doc</div>
+<div class="tooltip" id="n281">MENSAJE LAN XX PARADA EN SCOM<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Relojes/Parada%20de%20LAN%20xx.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n282">W  E  B  L  O  G  I  C<br><br></div>
+<div class="tooltip" id="n283">JAVA BEA WLS11G (SIARB) PRO<br> (BIALET1 Y BIALET2)<br>(REINICIO SERVERS 1-2 Y 1-2)</div>
+<div class="tooltip" id="n284">URL CONSOLA SIAR1B DES<br>(reinicio server 1 y 2 de <br> jackson2)<br>http://jackson2.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n285">URL CONSOLA SIAR PRO<br>(reinicio server 1 y 2 de <br> bialet1 y bialet2)<br><br>http://siarproadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n286">PRO</div>
+<div class="tooltip" id="n287">DES</div>
+<div class="tooltip" id="n288">S I A R</div>
+<div class="tooltip" id="n289">PARADA ARRANQUE<br>NODOS SIAR<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/SIAR/Reinicio,%20parada%20y%20arranque%20de%20nodos%20SIAR%20desde%20consola%20weblogic.doc</div>
+<div class="tooltip" id="n290">EXPORT DE SIAR SOBRE SIAR<br>http://recursosoperacion/usi_Sistemas/Bases%20de%20datos/Export%20de%20SIARL%20sobre%20SIARR.dot</div>
+<div class="tooltip" id="n292">WEBLOGIC DOCUMENTUM<br> </div>
+<div class="tooltip" id="n293">URL CONSOLA WLS DOCUMENTUM PRO (SANMATEO)<br>http://sanmateo.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n294">URL CONSOLA WLS DOCUMENTUM PRO (ELMIRA)<br>http://elmira.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n295">URL CONSOLA WLS DOCUMENTUM DES (BUGA)<br>http://buga.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n296">APLICACION DOCUMENTUM<br>https://documentum.metromadrid.net/webtop/component/main?__dmfClientId=1184237358460</div>
+<div class="tooltip" id="n297">SNAP DOCUMENTUM PRO<br>http://recursosoperacion/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Copias/Snap%20de%20Documentum.doc</div>
+<div class="tooltip" id="n298">JAVA BEA WLS10 (VISA) PRO<br>(BARACOA1 -  BAYAMO1)<br>(REINICIO SERVERS 1 Y 2)</div>
+<div class="tooltip" id="n299">V  I  S  A</div>
+<div class="tooltip" id="n300">VISA CONSOLA<br>(PRO)<br>http://visaproadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n301">VISA CONSOLA<br>(PRE)<br>http://visapreadm.metromadrid.net:7101/console</div>
+<div class="tooltip" id="n302">VISA CONSOLA<br>(DES)<br>http://visadesadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n303">BARACOA1(4056) ELDORADO<br>SERVIDOR APLICACIONES DE BEA PARA VISA</div>
+<div class="tooltip" id="n304">BAYAMO1 (4060) ELDORADO<br>SERVIDOR APLICACIONES BEA PARA VISA</div>
+<div class="tooltip" id="n305">VISA<br>REINICIO<br>SERVERS</div>
+<div class="tooltip" id="n306">JAVA BEA WLS10 (GENERICO)<br>(BARACOA3 Y BAYAMO3)<br>(REINICIO SERVERS 2 ) ARCO</div>
+<div class="tooltip" id="n307">Comprobar SAER(ARCO) Parada BBDD BEAP madrugada SABADO.<br>D:\OPER\CORREOS\ARCO\Comprobar SAER(ARCO) Parada BBDD BEAP madrugada SABADO.msg</div>
+<div class="tooltip" id="n308">BARACOA3 (4058) </div>
+<div class="tooltip" id="n309">BAYAMO3 (4062) ELDORADO</div>
+<div class="tooltip" id="n310">URL CONSOLA ARCO PINTA TRENES<br>https://amldap.bcm.metromadrid.net/amserver/gateway?goto=https%3A%2F%2Farco.metromadrid.net%3A443%2Farco%2Findex.jsp</div>
+<div class="tooltip" id="n311">URL CONSOLA ARCO PRO (GENERICO)<br>http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n312">URL CONSOLA ARCO PRO (GENERICO)<br>http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n313">URL:DIAGRAMA FLUJO ARCO INCIDENCIAS NO PINTAN LOS TRENES</div>
+<div class="tooltip" id="n314">ACTUACION INCIDENCIAS A R C O<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ARCO/Procedimiento%20de%20actuaci%C3%B3n%20por%20incidencias%20en%20ARCO.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n315">REINICIO SERVERS. APLIC.WEBLOGIC<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Reinicio%20servers%20aplicaciones%20weblogic.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n316">A R C O</div>
+<div class="tooltip" id="n317">NUEVO JAVA BEA WLS12 (GENERICO)<br>CLUSTER 1,2,3,4,5</div>
+<div class="tooltip" id="n318">JALPA(5241)<br>ENTORNO DES DE WLS12</div>
+<div class="tooltip" id="n319">JUNO (5237)<br>ENTORNO PRO DE WLS12</div>
+<div class="tooltip" id="n320">JUPITER (5238)<br>ENTORNO PRO DE WLS12</div>
+<div class="tooltip" id="n321">JACHIN (5240)<br>ENTORNO PRE DE WLS12</div>
+<div class="tooltip" id="n322">JATAI (5239)<br>ENTORNO PRE DE WLS12</div>
+<div class="tooltip" id="n323">Estado de la migración aplicaciones Java<br>a WLS12 (12/03/2015)</div>
+<div class="tooltip" id="n324">MADISON</div>
+<div class="tooltip" id="n325">INDIANA</div>
+<div class="tooltip" id="n326">NUEVO WLS10: JUNO/JUPITER (PRO)<br>http://progenadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n327">WLS12 PRE (JATAI/JACHIN)<br>http://pregenadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n328">WLS12 DESARROLLO (JALPA)<br>http://jalpa.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n329">BUS1 OSB <br>PRODUCCION<br>http://bus1proadm.metromadrid.net:7001/console <br></div>
+<div class="tooltip" id="n330">BUS OSB <br>PRE<br></div>
+<div class="tooltip" id="n331">BUS OSB DES<br>http://mendoza2.metromadrid.net:7001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n332">CONEXION SAGIR WL12<br>http://progenadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n333">O   S   B</div>
+<div class="tooltip" id="n334">NUEVO WLS10: JUNO/JUPITER (PRO)<br>http://progenadm.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n336">ARCO TIEMPOS CABECERA</div>
+<div class="tooltip" id="n337">L01_1</div>
+<div class="tooltip" id="n338">L01_2</div>
+<div class="tooltip" id="n339">L01_2</div>
+<div class="tooltip" id="n340">L02_4</div>
+<div class="tooltip" id="n341">L02_1</div>
+<div class="tooltip" id="n342">L03_2</div>
+<div class="tooltip" id="n343">L03_3</div>
+<div class="tooltip" id="n344">L04_1</div>
+<div class="tooltip" id="n345">L04_4</div>
+<div class="tooltip" id="n346">L05_2</div>
+<div class="tooltip" id="n347">L05_3</div>
+<div class="tooltip" id="n348">L06_1</div>
+<div class="tooltip" id="n349">L06_4</div>
+<div class="tooltip" id="n350">L07A_1</div>
+<div class="tooltip" id="n351">L07A_3</div>
+<div class="tooltip" id="n352">L07B_6</div>
+<div class="tooltip" id="n353">L07B_8</div>
+<div class="tooltip" id="n354">L08_2</div>
+<div class="tooltip" id="n355">L08_3</div>
+<div class="tooltip" id="n356">L09A_1</div>
+<div class="tooltip" id="n357">L09A_4</div>
+<div class="tooltip" id="n358">L09B_5</div>
+<div class="tooltip" id="n359">L09B_7</div>
+<div class="tooltip" id="n360">L10A_1</div>
+<div class="tooltip" id="n361">L10A_4</div>
+<div class="tooltip" id="n362">L10B_5</div>
+<div class="tooltip" id="n363">L10B_8</div>
+<div class="tooltip" id="n364">L11_2</div>
+<div class="tooltip" id="n365">L11_3</div>
+<div class="tooltip" id="n366">L12_1</div>
+<div class="tooltip" id="n367">L12_2</div>
+<div class="tooltip" id="n368">URL CONSOLA ARCO PINTA TRENES<br>https://amldap.bcm.metromadrid.net/amserver/gateway?goto=https%3A%2F%2Farco.metromadrid.net%3A443%2Farco%2Findex.jsp</div>
+<div class="tooltip" id="n369">URL:DIAGRAMA FLUJO ARCO INCIDENCIAS NO PINTAN LOS TRENES</div>
+<div class="tooltip" id="n370">ACTUACION INCIDENCIAS A R C O<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ARCO/Procedimiento%20de%20actuación%20por%20incidencias%20en%20ARCO.doc</div>
+<div class="tooltip" id="n371">URL CONSOLA ARCO PRO (GENERICO)<br>http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n372">L01_3<br>https://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L01_3&iPlanetDirectoryPro=AQIC5wM2LY4Sfcy7habjHxW476WlfapeeJZ%2F%2F1IwJD4%2FyUw%3D%40AAJTSQACMDMAAlNLAAk0MDgyMDU1NDYAAlMxAAIwMg%3D%3D%23</div>
+<div class="tooltip" id="n373">MANUAL KIOSKOS ARCO SCPT<br>http://gestdoc/HOMOLOGACION/Procedimientos%20Técnicos/MAN-SC-INT-2214.doc</div>
+<div class="tooltip" id="n374">WEBLOGIC SERVER CONSOLA<br>  GTL (baruta0z1p)<br> (SERVER1 Y SERVER2)</div>
+<div class="tooltip" id="n375">GTL CONSOLA<br>(PRO)<br>http://baruta0z1p.metromadrid.net:7001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n376">GTL CONSOLA servers<br>(PRO)<br>http://baruta0z1p.metromadrid.net:7001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage</div>
+<div class="tooltip" id="n377">GTL PROC. URGENCIA<br>(Gestión de trabajos en línea)<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/GTL/GTL.%20Procedimiento%20de%20urgencia.doc</div>
+<div class="tooltip" id="n378">REINICIO SERVERS. APLIC.WEBLOGIC<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Reinicio%20servers%20aplicaciones%20weblogic.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n379">GTL CONSOLA<br>(Pre)<br>http://baruta1z2t.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n380">GTL CONSOLA<br>(DES)<br>http://baruta1z1d.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n381">MAPA GTL<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/GTL/GTL.%20Mapa.doc</div>
+<div class="tooltip" id="n382">GTL CONSOLA workspace<br>(PRO)<br>http://baruta0z1p.metromadrid.net:8001/console/login/LoginForm.jsp</div>
+<div class="tooltip" id="n383">G   T   L</div>
+<div class="tooltip" id="n385">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n386">CONSOLA MOREA PRO<br>http://salta.metromadrid.net:50000/consolamorea</div>
+<div class="tooltip" id="n387">GDL<br>D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk</div>
+<div class="tooltip" id="n388">CTC LIGERO<br>http://16.0.4.12/index2.html</div>
+<div class="tooltip" id="n389">D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html</div>
+<div class="tooltip" id="n390">CONTROL MANUAL GDL-TR<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Control%20manual%20de%20GDL-TR.doc</div>
+<div class="tooltip" id="n391">CONSOLA MONITORIZACION GDL<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Consola%20de%20monitorización%20de%20GDL.%20Paradas,%20arranques%20y%20balanceos%20de%20GDL.%20Errores%20en%20el%20arranque.doc</div>
+<div class="tooltip" id="n392">PARADA-ARRANQUE MOREA SIN ROLES DEFINIDOS<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/MOREA/Parada%20y%20arranque%20de%20Morea%20sin%20roles%20definidos.doc<br><br></div>
+<div class="tooltip" id="n393">REINICIO DE MOREA TRAS CAIDA<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/MOREA/Reinicio%20de%20Morea%20tras%20caída%20del%20servidor%20Maestro%20de%20GDL.doc</div>
+<div class="tooltip" id="n394">VIA2 (5000)</div>
+<div class="tooltip" id="n395">VIA1 (4099)</div>
+<div class="tooltip" id="n396">MOREA2 (4091)</div>
+<div class="tooltip" id="n397">MOREA1 (4090)</div>
+<div class="tooltip" id="n398">LENTITUD GDL<br><br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Lentitud%20en%20GDL.doc</div>
+<div class="tooltip" id="n399">LEEME.TXT (GDL)<br>D:\OPER\EJECUTABLES\TUTO_INSTALAR _CONSOLA_GD-TR-LEEME.txt</div>
+<div class="tooltip" id="n400">PROCEDIMIENTO DE COMUNICACION DE INCIDENCIAS CON EL PUESTO DE MANDO.<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Procedimiento%20de%20comunicación%20de%20incidencias%20con%20el%20Puesto%20Central.doc<br></div>
+<div class="tooltip" id="n401">CONSOLA GDL<br>C:\Consola de Monitorizacion GDL-TR\produccion\Acceso directo a Monitorizacion_GDL_TR.lnk</div>
+<div class="tooltip" id="n402">PROCD.PROVISIONAL ACTUACION<br>ERRORES LOG EN GDL</div>
+<div class="tooltip" id="n403">Procedimiento provisional actuación <br>errores log DGL-TR<br><br>D:\OPER\CORREOS\GDL-MOREA\GDL - procedimiento provisional actuación errores log..msg</div>
+<div class="tooltip" id="n404">W I N D O W S</div>
+<div class="tooltip" id="n406">EQUIPOS CLIENTE<br>EN REMOTO<br>(WAKE ON LAN)</div>
+<div class="tooltip" id="n407">GESDOC IECISA COMMIT<br>http://gestdoc/default.aspx</div>
+<div class="tooltip" id="n408">CURSO DE WINDOWS<br>http://vsr-sp:3006<br></div>
+<div class="tooltip" id="n409">UTILIDADES OSUF<br>\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF.</div>
+<div class="tooltip" id="n410">GESTION CORREOS EXTERIOR.<br>https://10.2.22.133:8445/loginPage.imss</div>
+<div class="tooltip" id="n411">CONFIGURACION<br>MAQUETA <br>OPERACION 64 BITS<br>D:\OPER\MANUALES\WINDOWS\MAQUETA OPERACION 64BITS\MAN-SC-INT-2625.doc</div>
+<div class="tooltip" id="n412">UTILIDADES OSUF<br>\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF</div>
+<div class="tooltip" id="n413">EXPORT-IMPORT CONFIG. OUTLOOK<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Programas%20Operaci%C3%B3n/Export%20import%20Configuracion%20Outlook.doc&action=default</div>
+<div class="tooltip" id="n414">Nueva plataforma de correos (zimbra)</div>
+<div class="tooltip" id="n415">RECURSOS DE RED</div>
+<div class="tooltip" id="n416">CTC SERVER2<br></div>
+<div class="tooltip" id="n417">CTC SERVER1<br></div>
+<div class="tooltip" id="n418">VIA2 (5000)</div>
+<div class="tooltip" id="n419">VIA1 (4099)</div>
+<div class="tooltip" id="n420">RECURSO DE RED<br>CBTC\UC2<br></div>
+<div class="tooltip" id="n421">\\via2</div>
+<div class="tooltip" id="n422">\\via1</div>
+<div class="tooltip" id="n423">RECURSO RED OSUF - INTERCAMBIO<br><br>\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\</div>
+<div class="tooltip" id="n424">PROTOCOLO LLAMADAS<br>RED AL DIA FS<br>\\metromadrid.net\Estamentos\Area de Prensa\Comunicacion\Protocolo de llamadas\PROTOCOLO DE LLAMADAS.docx</div>
+<div class="tooltip" id="n425">RECURSO RED UNIX<br>LLAVERO<br></div>
+<div class="tooltip" id="n426">RECURSO COMUN DE<br>INFRAESTRUCTURA<br>INFORMATICA<br></div>
+<div class="tooltip" id="n427">ENLACES RECURSOS DE RED<br>D:\OPER\CORREOS\ENLACES\recopilación rutas de red compartidas entre OSUF (operadores) y resto SESSI.msg</div>
+<div class="tooltip" id="n428">RECURSO DE RED<br>RECURSOSOPERACION<br><br>http://recursosoperacion</div>
+<div class="tooltip" id="n429">METROMADRID.NET</div>
+<div class="tooltip" id="n430">UTILIDADES OSUF<br>\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF</div>
+<div class="tooltip" id="n431">TRATAMIENTO INCIDENCIAS LENTITUD DE RED.<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Procedimientos%20WINDOWS/Tratamiento%20de%20incidencias%20de%20red.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n432">Procedimiento incidencias recursos red, y lentitud iexplorer.<br>D:\OPER\CORREOS\WINDOWS\RV Procedimiento.msg</div>
+<div class="tooltip" id="n433">GRABACION VENTANA USUARIO.<br>C:\Windows\System32\PSR.EXE</div>
+<div class="tooltip" id="n434">COMANDO netst .Seguimiento trazas red<br>D:\OPER\EJECUTABLES\Seguimiento_traza_fallo_recurso_red.txt</div>
+<div class="tooltip" id="n435">INCIDENCIAS IE / RECURSOS RED<br>D:\OPER\MANUALES\WINDOWS\Tratamiento de incidencias de red 1.1.doc<br></div>
+<div class="tooltip" id="n436">D:\OPER\CORREOS\WINDOWS\Procedimiento incidencias en red.msg</div>
+<div class="tooltip" id="n437">V A R I O S </div>
+<div class="tooltip" id="n438">RECORTES (CAPTURA PANTALLA)<br>C:\Windows\system32\SnippingTool.exe\SnippingTool.exe</div>
+<div class="tooltip" id="n439">CAPTURA PANTALLA<br>MWSnap.exe</div>
+<div class="tooltip" id="n440">IMPRESO/JUSTIFICANTE<br>PERMISOS RETRIBUIDOS</div>
+<div class="tooltip" id="n441">NOTAS DE ONENOTE 2010</div>
+<div class="tooltip" id="n442">CONVENIO COLECTIVO 2013/2015</div>
+<div class="tooltip" id="n443">HOJA DE DIETAS<br>http://RECURSOSOPERACION/usi_Operacion/HOJA%20DE%20DIETAS.doc</div>
+<div class="tooltip" id="n444">IMPRESO CONSULTA<br>MEDICA ESPECIALISTA<br>D:\OPER\IMPRESOS\CONSULTA MÉDICA ESPECIALISTA - ENERO 2014.pdf</div>
+<div class="tooltip" id="n445">APLICACIONES NOSAP</div>
+<div class="tooltip" id="n446">AUAC</div>
+<div class="tooltip" id="n447">IMPUTAR<br>HORAS</div>
+<div class="tooltip" id="n448">MANUAL OPERACION CTC<br>http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/CTC/Carga%20CTC-MA-Manual%20Operación-%20v2.0.docx</div>
+<div class="tooltip" id="n449">NOSAP (4093)</div>
+<div class="tooltip" id="n450">JUNO (5237)<br>ENTORNO PRO DE WLS12</div>
+<div class="tooltip" id="n451">JUPITER (5238)<br>ENTORNO PRO DE WLS12</div>
+<div class="tooltip" id="n452">PROCESAR CTC<br>CON CTB<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20NOSAP/Procesado%20CTC%20con%20CBTC%20(ANTIGUO).doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n453">CTC FALTA DE DATOS<br>D:\OPER\FLUJOS\CTC_FALTA DE DATOS.html</div>
+<div class="tooltip" id="n454">APLICACIONES SAP JAVA<br>NETWEAVER</div>
+<div class="tooltip" id="n455">CASILDA3 (4080) ELDORADO<br>SAP-NETWEAVER+BBDD (JNE)</div>
+<div class="tooltip" id="n456">JNE CONSOLA<br>(CASILDA3)<br>SAP-JAVA NETWEAVER<br>http://casilda3.metromadrid.net:50000/</div>
+<div class="tooltip" id="n457">JND CONSOLA<br>(CAMPANA)<br>SAP-JAVA NETWEAVER<br>http://campana.metromadrid.net:50000/</div>
+<div class="tooltip" id="n458">JNT CONSOLA (BARILOCHE)<br>SAP-JAVA NETWEAVER<br>http://bariloche.metromadrid.net:50000/</div>
+<div class="tooltip" id="n459">MAPA NETWEAVER</div>
+<div class="tooltip" id="n460">CAMPANA (5247) LAPLATA<br>SAP-NETWEAVER+BBDD (JND)</div>
+<div class="tooltip" id="n461">REINICIO SERVERS SAP JAVA<br>(DESDE UNIX)<br>APLICACIONES JAVA</div>
+<div class="tooltip" id="n462">REINICIO SERVERS<br>SAP JAVA<br>(DESDE CONSOLA)</div>
+<div class="tooltip" id="n463">GRC CONSOLA (TOPEKA02)<br>http://topeka02.metromadrid.net:50000/index.html</div>
+<div class="tooltip" id="n464">SLD CONSOLA (NAPA)</div>
+<div class="tooltip" id="n465">REINICIO SERVERS JNT Y BEA EN Pre<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/SIAR-GR/Reinicio%20servidores%20JNT%20y%20BEA%20en%20Preproducción.doc</div>
+<div class="tooltip" id="n466">ACTUACION PROBLEMAS ADS<br>(JAVA-NETWEAVER)<br>http://RECURSOSOPERACION/usi_Explotacion/SAP.%20Generico/Problemática%20con%20jobs/Job_BC_CONEXION_ADS-JNE_DEL00D.doc</div>
+<div class="tooltip" id="n467">MAPA SMM<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Mapa%20de%20SMM.doc</div>
+<div class="tooltip" id="n468">MAPA NETWEAVER<br>http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Mapa%20de%20Netweaver.doc</div>
+<div class="tooltip" id="n469">Baja del servidor topeka02</div>
+<div class="tooltip" id="n470">COPIAS DE BACKUP <br> </div>
+<div class="tooltip" id="n471">BACKUP OFFLINE CMDBP (SCRIPTS)</div>
+<div class="tooltip" id="n472">TORREON (4068) LEDORADO</div>
+<div class="tooltip" id="n473">ORLANDO<br>(GLOBAL)</div>
+<div class="tooltip" id="n474">RENO (5234) - LAPLATA</div>
+<div class="tooltip" id="n475">BACKUP OFFLINE CMDBP (SCRIPTS)</div>
+<div class="tooltip" id="n476">CBDB.SPR STOP<br>D:\OPER\EJECUTABLES\CMDB SPR\STOP.CMDB.SPR.bat</div>
+<div class="tooltip" id="n477">CBDB.SPR START<br>D:\OPER\EJECUTABLES\CMDB SPR\START.CMDB.SPR.bat</div>
+<div class="tooltip" id="n478">D:\OPER\CORREOS\B A C K U P  -  UNIX-WINDOWS\RE Procedimiento de backup offline de CMDBP.msg</div>
+<div class="tooltip" id="n479">FORTALEZA (4067) - ELDORADO</div>
+<div class="tooltip" id="n480">COMANDOS CMDBP (NOTES 2010)</div>
+<div class="tooltip" id="n481">BACKUP OFFLINE TIMON GID<br>LUNES (20:00)</div>
+<div class="tooltip" id="n482">COMANDOS backup TIMNON<br>D:\OPER\EJECUTABLES\comandos copia timon.txt</div>
+<div class="tooltip" id="n483">TIMON (5205) - LAPLATA</div>
+<div class="tooltip" id="n484">TIMON (5205) - LAPLATA</div>
+<div class="tooltip" id="n485">BACKUP OFFLINE GID (TIMON)<br>LUNES-TARDE 20:00</div>
+<div class="tooltip" id="n486">TIMON (GID)</div>
+<div class="tooltip" id="n487">BACKUP OFFLINE CAMPECHE GIP<br>MIERCOLES-NOCHE (01:05)</div>
+<div class="tooltip" id="n488">COMANDOS backup CAMPECHE<br>D:\OPER\EJECUTABLES\comandos copia campeche.txt</div>
+<div class="tooltip" id="n489">CAMPECHE (4072) - ELDORADO</div>
+<div class="tooltip" id="n490">ARAB</div>
+<div class="tooltip" id="n491">BOAZ</div>
+<div class="tooltip" id="n493">COMANDOS BEA Y BMC (NOTES 2010)</div>
+<div class="tooltip" id="n494">BACKUP OFF<br>TULUM GIT<br>V./NOCHE(1:05)</div>
+<div class="tooltip" id="n495">TULUM (5217) - LAPLATA</div>
+<div class="tooltip" id="n496">D O C U M E N T U M<br> </div>
+<div class="tooltip" id="n497">PARADA DE DOCUMENTUM EN NEIVA11</div>
+<div class="tooltip" id="n498">COMANDOS NEIVA11<br></div>
+<div class="tooltip" id="n499">NEIVA11 (4092) ELDORADO<br>D:\OPER\XWING\HURON (5244) - LAPLATA.lnk<br></div>
+<div class="tooltip" id="n500">HURON (5244)<br>D:\OPER\XWING\HURON (5244) - LAPLATA.lnk</div>
+<div class="tooltip" id="n501">PRODUCCION: DOCUMENTUM<br>(NOCHE-VIERNES 03:00 COPIA MANUAL OFF)</div>
+<div class="tooltip" id="n502">SANJUAN<br>(index server)</div>
+<div class="tooltip" id="n503">SANJOSE<br>(ser.apli)</div>
+<div class="tooltip" id="n504">CALI (4069)</div>
+<div class="tooltip" id="n505">CARTAGO (4077)</div>
+<div class="tooltip" id="n506">SIERRA</div>
+<div class="tooltip" id="n507">TORREON (4068) LEDORADO</div>
+<div class="tooltip" id="n508"><br></div>
+<div class="tooltip" id="n509"><br></div>
+<div class="tooltip" id="n510">DESARROLLO/PRE-PRODUCCION: DOCUMENTUM<br>(GN-SABADO 19:15 COPIA MANUAL OFF)</div>
+<div class="tooltip" id="n511">COMANDOS backup<br></div>
+<div class="tooltip" id="n512">APLICACION DOCUMENTUM<br>https://documentum.metromadrid.net/webtop/component/main?__dmfClientId=1184237358460</div>
+<div class="tooltip" id="n513">COPIA OFFLINE<br>DOCUMENTUM<br>NEIVA11 (SAB.)</div>
+<div class="tooltip" id="n514">TEST ARRANQUE<br>XPLORE EN HURON<br>COPIA NEIVA11</div>
+<div class="tooltip" id="n515">COMANDO COPIA BACKUP<br>DOCUMENTUM PRO (NOTE 2010)</div>
+<div class="tooltip" id="n516">COPIA OFFLINE DOCUMENTUM TEST<br>(SABADO T/N)</div>
+<div class="tooltip" id="n517">URL NETRO PRO<br>(VERIFICA SI EL SERVICIO<br>ESTÁ LEVANTADO, DEVUELVE<br>The xPlore instance PrimaryDsearch [version=1.4.0210.0048] normal)</div>
+<div class="tooltip" id="n518">COPIA OFFLINE DOCUMENTUM PRO<br>(VIERNES N)<br>D:\OPER\CORREOS\DOCUMENTUM\RV Procedimiento de backup offline de Documentum NUEVO.msg</div>
+<div class="tooltip" id="n519">SNAP DOCUMENTUM<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Copias/Snap%20de%20Documentum.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n520">NEIVA11 (4092) ELDORADO<br>D:\OPER\XWING\HURON (5244) - LAPLATA.lnk<br></div>
+<div class="tooltip" id="n521"><br></div>
+<div class="tooltip" id="n522"><br></div>
+<div class="tooltip" id="n523">URL CONSOLA WLS DOCUMENTUM DES (BUGA)<br>http://buga.metromadrid.net:7001/console</div>
+<div class="tooltip" id="n524">D:\OPER\FLUJOS\COMANDOS DE BACKUP_OTROS.html</div>
+<div class="tooltip" id="n525">COMPROBACIONES REINICIAR HOUSTON<br>http://recursosoperacion/usi_Sistemas/Backup, almacenamiento y recuperacion/Copias/COMPROBACIONES EN HOUSTON PARA VALORAR SI FUNCIONA NETWORKER Y POSIBLE REINICIO.doc?Web=1</div>
+<div class="tooltip" id="n526">COMPROBACIONES HOUSTON<br>D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\RE Comprobaciones en Houston para valorar si funciona Networker.msg</div>
+<div class="tooltip" id="n527">SCRIPT QUE VIGILA AGENTE EN NOSAP</div>
+<div class="tooltip" id="n528">PROBLEMA ENTRE NETWORKER Y <br>CONSOLA<br>http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Consola/Problema%20entre%20Networker%20y%20Consola.doc&action=default&DefaultItemOpen=1</div>
+<div class="tooltip" id="n529">BACKUP OFFLINE EN MADERA DEL<br>DEL CORREO ZIMBRA</div>
+<div class="tooltip" id="n530">TULUM (5217) - LAPLATA</div>
+<div class="tooltip" id="n531">COMANDOS backup MADERA<br>D:\OPER\EJECUTABLES\comandos copia madera.txt</div>
+<div class="tooltip" id="n532">BACKUP OFFLINE  EN MADERA DEL <br>CORREO ZIMBRA<br>D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\Backup offline de madera.msg</div>
+<div class="tooltip" id="n533">PROBLEMAS CON HOUSTON</div>
+<div class="tooltip" id="n534">REMOTO VIRTUALES</div>
+<div class="tooltip" id="n535">DATA PROTECTOR<br>CHIETI ESC-60545</div>
+<div class="tooltip" id="n536">DATA PROTECTOR<br>CHIETI ESC-60546</div>
+<div class="tooltip" id="n537">ENCENDIDO REMOTO<br>ESC-60731</div>
+<div class="tooltip" id="n538">CNPIC<br>ESC-60711</div>
+<div class="tooltip" id="n539">CTC<br>ESC-60732</div>
+<div class="tooltip" id="n540">W7-12638 <br>GUARDIAS<br>MESA 59</div>
+<div class="tooltip" id="n541">COMANDO MSTSC, ESCRITORIO REMOTO</div>
+<div class="tooltip" id="n542">http://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0CCEQFjAAahUKEwi587rjzfvGAhWDyRQKHbN4CBc&url=http%3A%2F%2Fmaps.google.es%2F&ei=sEu2VbnbIYOTU7PxobgB&usg=AFQjCNH1IVUDSytjrJh9k6P4SNFpfE-nAg&bvm=bv.98717601,d.ZGU</div>
+<div class="tooltip" id="n543">TRADUCTOR GOOGLE<br>ttps://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&sqi=2&ved=0CDAQFjABahUKEwiOurOCzfvGAhUD6xQKHYV4AeE&url=http%3A%2F%2Ftranslate.google.es%2F&ei=5Uq2Vc4zg9ZThfGFiA4&usg=AFQjCNHWdDX5vS1tnB5GqqMpQpr8cpLgpg&bvm=bv.98717601,d.ZGU</div>
+<div class="tooltip" id="n544">NETWORKER<br>C:\Windows\SysWOW64\javaws.exe -localfile -J-Djnlp.application.href=http://buenavista.metromadrid.net:6000/gconsole.jnlp "D:\Users\P04754\AppData\LocalLow\Sun\Java\Deployment\cache\6.0\10\7dcb4f4a-4965e599"</div>
+<div class="tooltip" id="n546">ENLACES HABITUALES<br>http://recursosoperacion/usi_Operacion/Enlaces%20habituales.doc</div>
+<div class="tooltip" id="n547">CALENDARIO 2016<br>http://recursosoperacion/usi_Operacion/Calendario%20laboral%20METRO%202016.pdf</div>
+<div class="tooltip" id="n548"> PUTTY Connection<br>D:\OPER\EJECUTABLES\PuTTY Connection Manager\puttycm.exe</div>
+<div class="tooltip" id="n549">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n550">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n551">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n552">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n553">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n554">D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html</div>
+<div class="tooltip" id="n555">GUARDIAS NOMBRAMIENTO<br>http://recursosoperacion/usi_Operacion/Nombramiento%20de%20Servicios%20(guardias).doc</div>
+<div class="tooltip" id="n556">X-WIN32 SSH</div>
+<div class="tooltip" id="n557">HABANA (5203) - LAPLATA</div>
+<div class="tooltip" id="n558">SANTIAGO (5204) - LAPLATA</div>
+<div class="tooltip" id="n559">DUMAS (4082)</div>
+<div class="tooltip" id="n560">BARACOA3 (4058) </div>
+<div class="tooltip" id="n561">BAYAMO3 (4062) ELDORADO</div>
+<div class="tooltip" id="n562">TRINIDAD (5206) - LAPLATA</div>
+<div class="tooltip" id="n563">VARADERO (5207) - LAPLATA</div>
+<div class="tooltip" id="n564">FORTALEZA (4067) - ELDORADO</div>
+<div class="tooltip" id="n565">TORREON (4068) LEDORADO</div>
+<div class="tooltip" id="n566">ALVIN (5226) - LAPLATA</div>
+<div class="tooltip" id="n567">BASES DE DATOS<br> </div>
+<div class="tooltip" id="n568">Mensajes de los clusters</div>
+<div class="tooltip" id="n569">Problemas parada backup documentum<br>workaround en caso de cuelgue</div>
+<div class="tooltip" id="n570">CORREOS<br> </div>
+<div class="tooltip" id="n571">CORREO ZIMBRA<br>https://webmail.metromadrid.org/</div>
+<div class="tooltip" id="n572">CORREO WEB OUTLOOK<br>https://webmail.metromadrid.es/owa/#path=/mail</div>
+<div class="tooltip" id="n573">TRIPTICO GI<br>D:\OPER\MANUALES\GESTION DE IDENTIDADES\triptico gestion identidades.pdf<br></div>
+
+<map name="image1_1">
+  <area shape="rect" coords="1619,1205,1677,1260" href="https://webmail.metromadrid.es/owa/#path=/mail" alt="" onmouseover="showTooltip('n572')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1522,1205,1580,1260" href="https://webmail.metromadrid.org/" alt="" onmouseover="showTooltip('n571')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1496,1148,1852,1364" alt="" onmouseover="showTooltip('n570')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1566,1059,1603,1085" href="D:\OPER\CORREOS\BBDD\Problemas parada backup documentum workaround en caso de cuelgue.msg" alt="" onmouseover="showTooltip('n569')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1519,1059,1556,1085" href="D:\OPER\CORREOS\BBDD\Mensaje de los clusters..msg" alt="" onmouseover="showTooltip('n568')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1496,984,1852,1139" alt="" onmouseover="showTooltip('n567')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="852,3070,886,3101" href="D:\OPER\XWING\ALVIN (5226) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n566')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="852,2971,886,3006" href="D:\OPER\XWING\TORREON (4068) ELDORADO.lnk" alt="" onmouseover="showTooltip('n565')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="784,2973,818,3008" href="D:\OPER\XWING\FORTALEZA (4067) - ELDORADO.lnk" alt="" onmouseover="showTooltip('n564')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="784,3071,818,3107" href="D:\OPER\XWING\VARADERO (5207) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n563')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="716,3071,750,3107" href="D:\OPER\XWING\TRINIDAD (5206) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n562')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="648,3071,682,3107" href="D:\OPER\XWING\BAYAMO3 (4062-OK).lnk" alt="" onmouseover="showTooltip('n561')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="579,3071,613,3107" href="D:\OPER\XWING\BARACOA3 (4058-OK).lnk" alt="" onmouseover="showTooltip('n560')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="707,2971,741,3006" href="D:\OPER\XWING\DUMAS (4082).lnk" alt="" onmouseover="showTooltip('n559')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="643,2971,677,3006" href="D:\OPER\XWING\SANTIAGO (5204) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n558')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="579,2971,613,3006" href="D:\OPER\XWING\HABANA (5203) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n557')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="547,2930,917,3159" alt="" onmouseover="showTooltip('n556')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1607,117,1644,154" href="http://recursosoperacion/usi_Operacion/Nombramiento%20de%20Servicios%20(guardias).doc" alt="" onmouseover="showTooltip('n555')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="521,871,934,884" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n554')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1004,302,1241,336" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n553')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="520,452,945,461" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n552')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1037,763,1329,777" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n551')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1259,955,1587,995" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n550')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="50,1383,1835,1421" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n549')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="389,107,487,132" href="D:\OPER\EJECUTABLES\PuTTY Connection Manager\puttycm.exe" alt="" onmouseover="showTooltip('n548')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1505,103,1577,168" href="http://recursosoperacion/usi_Operacion/Calendario%20laboral%20METRO%202016.pdf" alt="" onmouseover="showTooltip('n547')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1291,119,1343,171" href="http://recursosoperacion/usi_Operacion/Enlaces%20habituales.doc" alt="" onmouseover="showTooltip('n546')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1816,232,1840,258" href="\\w7-12638\multimedia$\Peliculas" alt="" target="_blank"/>
+  <area shape="rect" coords="1695,115,1786,191" href="D:\OPER\EJECUTABLES\NetWorker Management Console.lnk" alt="" onmouseover="showTooltip('n544')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1443,121,1492,170" href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&sqi=2&ved=0CDAQFjABahUKEwiOurOCzfvGAhUD6xQKHYV4AeE&url=http%3A%2F%2Ftranslate.google.es%2F&ei=5Uq2Vc4zg9ZThfGFiA4&usg=AFQjCNHWdDX5vS1tnB5GqqMpQpr8cpLgpg&bvm=bv.98717601,d.ZGU" alt="" onmouseover="showTooltip('n543')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1373,121,1423,170" href="http://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0CCEQFjAAahUKEwi587rjzfvGAhWDyRQKHbN4CBc&url=http%3A%2F%2Fmaps.google.es%2F&ei=sEu2VbnbIYOTU7PxobgB&usg=AFQjCNH1IVUDSytjrJh9k6P4SNFpfE-nAg&bvm=bv.98717601,d.ZGU" alt="" onmouseover="showTooltip('n542')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1786,405,1825,444" href="C:\Windows\System32\MSTSC.EXE" alt="" onmouseover="showTooltip('n541')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1721,405,1765,453" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\w712638.rdp" alt="" onmouseover="showTooltip('n540')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1639,405,1683,453" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\REMOTO CTC ESC60732.rdp" alt="" onmouseover="showTooltip('n539')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1536,405,1580,453" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\REMOTO CNPIC ESC60711.rdp" alt="" onmouseover="showTooltip('n538')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1750,298,1794,346" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\ENCENDIDO REMOTO MAQUINAS CLIENTES_ESC60731.rdp" alt="" onmouseover="showTooltip('n537')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1639,298,1683,346" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\02 Acceso Chieti 60546.rdp" alt="" onmouseover="showTooltip('n536')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1528,298,1572,346" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\01 Acceso Chieti 60545.rdp" alt="" onmouseover="showTooltip('n535')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1493,228,1856,520" alt="" onmouseover="showTooltip('n534')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="613,2851,653,2873" href="D:\OPER\FLUJOS\PROBLEMAS CON HOUSTON.html" alt="" onmouseover="showTooltip('n533')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="748,3232,773,3248" href="D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\Backup offline de madera.msg" alt="" onmouseover="showTooltip('n532')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="637,3225,710,3250" href="D:\OPER\EJECUTABLES\comandos copia madera.txt" alt="" onmouseover="showTooltip('n531')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="590,3224,614,3252" href="D:\OPER\XWING\TULUM (5217) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n530')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="551,3168,903,3287" alt="" onmouseover="showTooltip('n529')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="683,2843,722,2882" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Consola/Problema%20entre%20Networker%20y%20Consola.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n528')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="846,2847,871,2866" href="D:\OPER\CORREOS\OMU\Script que vigila agente en nosap.msg" alt="" onmouseover="showTooltip('n527')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="551,2842,576,2861" href="D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\RE Comprobaciones en Houston para valorar si funciona Networker.msg" alt="" onmouseover="showTooltip('n526')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="579,2842,619,2882" href="http://recursosoperacion/usi_Sistemas/Backup, almacenamiento y recuperacion/Copias/COMPROBACIONES EN HOUSTON PARA VALORAR SI FUNCIONA NETWORKER Y POSIBLE REINICIO.doc?Web=1" alt="" onmouseover="showTooltip('n525')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="787,2843,830,2881" href="D:\OPER\FLUJOS\COMANDOS DE BACKUP_OTROS.html" alt="" onmouseover="showTooltip('n524')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="384,2863,422,2904" href="http://buga.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n523')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="276,2906,296,2933" alt="" onmouseover="showTooltip('n522')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="233,2906,253,2933" alt="" onmouseover="showTooltip('n521')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="319,2906,339,2933" href="D:\OPER\XWING\NEIVA11 (4092) ELDORADO.lnk" alt="" onmouseover="showTooltip('n520')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="461,3065,501,3105" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Copias/Snap%20de%20Documentum.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n519')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="350,3060,387,3082" href="D:\OPER\CORREOS\DOCUMENTUM\RV Procedimiento de backup offline de Documentum NUEVO.msg" alt="" onmouseover="showTooltip('n518')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="80,2995,114,3029" href="http://sanjuan.metromadrid.net:9300/dsearch/" alt="" onmouseover="showTooltip('n517')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="462,2908,500,2931" href="D:\jvr\BK\BACKUP-OPERADM\CORREOS\DOCUMENTUM\RE  BACKUP DEL ENTORNO DE PREPRODUCCIÓN DE DOCUMENTUM.msg" alt="" onmouseover="showTooltip('n516')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="439,2982,523,3048" href="onenote:///K:\Otero\Diario%20Operación\COPIAS%20DE%20BACKUP.one#Comandos%20DOCUMENTUM&section-id={B5F70B22-5508-4736-A7EB-8D971E2FE7A4}&page-id={A3444BC9-A8E8-48DC-BE4F-701AC05F0AC1}&end" alt="" onmouseover="showTooltip('n515')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="90,2857,118,2886" href="http://huron.metromadrid.net:9300/dsearch/" alt="" onmouseover="showTooltip('n514')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="464,2818,504,2858" href="http://RECURSOSOPERACION/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Copias/Backup%20offline%20de%20Documentum%20(Desarrollo).doc" alt="" onmouseover="showTooltip('n513')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="157,3068,191,3103" href="https://documentum.metromadrid.net/webtop/component/main?__dmfClientId=1184237358460" alt="" onmouseover="showTooltip('n512')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="246,3058,323,3083" href="D:\OPER\EJECUTABLES\comandos documentum PRO nuevo copia viernes.txt" alt="" onmouseover="showTooltip('n511')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="90,2823,405,2844" alt="" onmouseover="showTooltip('n510')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="283,2858,303,2885" alt="" onmouseover="showTooltip('n509')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="235,2858,255,2885" alt="" onmouseover="showTooltip('n508')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="333,2860,354,2883" href="D:\OPER\XWING\TORREON (4068) ELDORADO.lnk" alt="" onmouseover="showTooltip('n507')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="386,2996,409,3026" href="D:\OPER\XWING\SIERRA (5219) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n506')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="329,2996,351,3026" href="D:\OPER\XWING\CARTAGO (4077).lnk" alt="" onmouseover="showTooltip('n505')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="213,2997,235,3027" href="D:\OPER\XWING\CALI (4069).lnk" alt="" onmouseover="showTooltip('n504')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="269,2995,292,3028" alt="" onmouseover="showTooltip('n503')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="157,2996,179,3028" alt="" onmouseover="showTooltip('n502')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="91,2953,418,2982" alt="" onmouseover="showTooltip('n501')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="148,2858,171,2885" href="D:\OPER\XWING\HURON (5244) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n500')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="192,2858,212,2885" href="D:\OPER\XWING\NEIVA11 (4092) ELDORADO.lnk" alt="" onmouseover="showTooltip('n499')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="136,2916,192,2940" href="D:\OPER\EJECUTABLES\Comandos para copia sabado DOCUMENTUM DESA.txt" alt="" onmouseover="showTooltip('n498')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="192,2911,220,2928" href="D:\OPER\CORREOS\DOCUMENTUM\RV Sobre parada Index Server de Documentun Desarrollo en Huron..msg" alt="" onmouseover="showTooltip('n497')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="50,2764,543,3159" alt="" onmouseover="showTooltip('n496')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="816,2572,841,2600" href="D:\OPER\XWING\TULUM (5217) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n495')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="777,2495,903,2675" alt="" onmouseover="showTooltip('n494')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="749,2735,792,2777" href="onenote:///K:\Otero\Diario%20Operación\COPIAS%20DE%20BACKUP.one#Comandos%20BEA%20y%20BMC&section-id={B5F70B22-5508-4736-A7EB-8D971E2FE7A4}&page-id={0E555A7F-B98C-4EFD-A934-19C8FBD73643}&end" alt="" onmouseover="showTooltip('n493')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="709,2742,733,2758" href="D:\OPER\CORREOS\COPIAS BACKUP\RE Modificación procedimiento backup offline de GIP - CAMPECHE.msg" alt="" target="_blank"/>
+  <area shape="rect" coords="670,2735,700,2770" alt="" onmouseover="showTooltip('n491')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="632,2734,662,2769" alt="" onmouseover="showTooltip('n490')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="584,2734,614,2769" href="D:\OPER\XWING\CAMPECHE (4072).lnk" alt="" onmouseover="showTooltip('n489')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="799,2744,882,2768" href="D:\OPER\EJECUTABLES\comandos copia campeche.txt" alt="" onmouseover="showTooltip('n488')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="547,2680,904,2838" alt="" onmouseover="showTooltip('n487')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="560,2592,586,2612" href="D:\OPER\CORREOS\COPIAS BACKUP\RE Modificación del procedimiento de backup offline de GID.msg" alt="" onmouseover="showTooltip('n486')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="559,2550,751,2582" alt="" onmouseover="showTooltip('n485')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="592,2593,614,2622" href="D:\OPER\XWING\TIMON (5205) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n484')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="635,2593,657,2622" href="D:\OPER\XWING\TIMON (5205) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n483')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="678,2595,746,2620" href="D:\OPER\EJECUTABLES\comandos copia timon.txt" alt="" onmouseover="showTooltip('n482')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="544,2495,777,2675" alt="" onmouseover="showTooltip('n481')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="96,2646,139,2688" href="onenote:///K:\Otero\Diario%20Operación\COPIAS%20DE%20BACKUP.one#Comandos%20CMDBP&section-id={B5F70B22-5508-4736-A7EB-8D971E2FE7A4}&page-id={F75A9AAE-501B-4E97-A5EB-1B5313E3261E}&end" alt="" onmouseover="showTooltip('n480')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="450,2577,474,2614" href="D:\OPER\XWING\FORTALEZA (4067) - ELDORADO.lnk" alt="" onmouseover="showTooltip('n479')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="67,2563,97,2593" href="D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\RE Procedimiento de backup offline de CMDBP.msg" alt="" onmouseover="showTooltip('n478')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="95,2574,129,2616" href="D:\OPER\EJECUTABLES\CMDB SPR\START.CMDB.SPR.bat" alt="" onmouseover="showTooltip('n477')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="169,2574,203,2616" href="D:\OPER\EJECUTABLES\CMDB SPR\STOP.CMDB.SPR.bat" alt="" onmouseover="showTooltip('n476')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="97,2537,464,2559" alt="" onmouseover="showTooltip('n475')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="234,2577,256,2612" href="D:\OPER\XWING\RENO (5234) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n474')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="305,2577,327,2612" alt="" onmouseover="showTooltip('n473')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="377,2576,399,2614" href="D:\OPER\XWING\TORREON (4068) ELDORADO.lnk" alt="" onmouseover="showTooltip('n472')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="52,2495,543,2762" alt="" onmouseover="showTooltip('n471')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="35,2425,923,3306" alt="" onmouseover="showTooltip('n470')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1374,857,1395,871" href="D:\OPER\CORREOS\SERVIDORES\Baja en monitorizacion.msg" alt="" onmouseover="showTooltip('n469')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1259,1053,1302,1103" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Mapa%20de%20Netweaver.doc" alt="" onmouseover="showTooltip('n468')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1349,1053,1392,1103" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Mapa%20de%20SMM.doc" alt="" onmouseover="showTooltip('n467')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1355,1252,1404,1302" href="http://RECURSOSOPERACION/usi_Explotacion/SAP.%20Generico/Problemática%20con%20jobs/Job_BC_CONEXION_ADS-JNE_DEL00D.doc" alt="" onmouseover="showTooltip('n466')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1268,1252,1313,1302" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/SIAR-GR/Reinicio%20servidores%20JNT%20y%20BEA%20en%20Preproducción.doc" alt="" onmouseover="showTooltip('n465')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1417,847,1456,885" href="http://napa.metromadrid.net:50200/index.html " alt="" onmouseover="showTooltip('n464')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1342,847,1380,885" href="http://topeka02.metromadrid.net:50000/index.html" alt="" onmouseover="showTooltip('n463')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1355,1150,1404,1200" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Reiniciar%20servers%20de%20in%20sistema%20SAP%20Java%20(desde%20Consola).doc" alt="" onmouseover="showTooltip('n462')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1266,1150,1316,1200" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Java%20(Netweaver)/Reiniciar%20servers%20de%20in%20sistema%20SAP%20Java%20(desde%20UNIX).doc" alt="" onmouseover="showTooltip('n461')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1424,949,1458,992" href="D:\OPER\XWING\CAMPANA (5247) LAPLATA.lnk" alt="" onmouseover="showTooltip('n460')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1259,1038,1323,1061" href="D:\OPER\FLUJOS\MAPA NETWEAVER.png" alt="" onmouseover="showTooltip('n459')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1342,943,1380,981" href="http://bariloche.metromadrid.net:50000/" alt="" onmouseover="showTooltip('n458')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1269,946,1312,983" href="http://campana.metromadrid.net:50000/" alt="" onmouseover="showTooltip('n457')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1269,848,1312,884" href="http://casilda3.metromadrid.net:50000/" alt="" onmouseover="showTooltip('n456')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1424,1025,1458,1071" href="D:\OPER\XWING\CASILDA3 (4080) ELDORADO.lnk" alt="" onmouseover="showTooltip('n455')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1235,769,1489,1364" alt="" onmouseover="showTooltip('n454')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1110,348,1131,369" href="D:\OPER\FLUJOS\CTC_FALTA DE DATOS.html" alt="" onmouseover="showTooltip('n453')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="993,352,1030,390" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20NOSAP/Procesado%20CTC%20con%20CBTC%20(ANTIGUO).doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n452')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1161,330,1180,354" href="D:\OPER\XWING\JUPITER (5238) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n451')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,377,1180,403" href="D:\OPER\XWING\JUNO (5237) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n450')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,265,1183,296" href="D:\OPER\XWING\NOSAP (4093).lnk" alt="" onmouseover="showTooltip('n449')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1087,352,1105,390" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/CTC/Carga%20CTC-MA-Manual%20Operación-%20v2.0.docx" alt="" onmouseover="showTooltip('n448')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="992,265,1031,304" href="https://produbd.metromadrid.net:10443/sap/bc/bsp/sap/zps_time_sheet/default.htm" alt="" onmouseover="showTooltip('n447')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1061,265,1109,313" href="\\granada\Apli_Corp\AUAC\acceso_unico.exe" alt="" onmouseover="showTooltip('n446')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="958,223,1229,443" alt="" onmouseover="showTooltip('n445')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1587,3013,1707,3054" href="D:\OPER\IMPRESOS\CONSULTA MÉDICA ESPECIALISTA - ENERO 2014.pdf" alt="" onmouseover="showTooltip('n444')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1713,3013,1806,3054" href="http://RECURSOSOPERACION/usi_Operacion/HOJA%20DE%20DIETAS.doc" alt="" onmouseover="showTooltip('n443')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1488,3112,1582,3150" href="D:\OPER\PDF´S\CONVENIO\convenio 2013-2015.pdf" alt="" onmouseover="showTooltip('n442')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1587,3112,1680,3149" href="D:\OPER\EJECUTABLES\Notas Operación.onepkg" alt="" onmouseover="showTooltip('n441')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1487,3013,1582,3054" href="D:\OPER\IMPRESOS\SOLICITUD DE PERMISO - ENERO 2014.pdf" alt="" onmouseover="showTooltip('n440')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1587,3063,1680,3101" href="D:\OPER\EJECUTABLES\MWSnap.exe" alt="" onmouseover="showTooltip('n439')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1488,3063,1582,3101" href="C:\Windows\System32\SnippingTool.exe" alt="" onmouseover="showTooltip('n438')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1472,2952,1859,3306" alt="" onmouseover="showTooltip('n437')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1629,841,1650,855" href="D:\OPER\CORREOS\WINDOWS\Procedimiento incidencias en red.msg" alt="" onmouseover="showTooltip('n436')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1650,841,1687,878" href="D:\OPER\MANUALES\WINDOWS\Tratamiento de incidencias de red 1.1.doc" alt="" onmouseover="showTooltip('n435')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1702,824,1800,848" href="D:\OPER\EJECUTABLES\Seguimiento_traza_fallo_recurso_red.txt" alt="" onmouseover="showTooltip('n434')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1725,857,1777,880" href="C:\Windows\System32\PSR.EXE" alt="" onmouseover="showTooltip('n433')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1525,848,1546,862" href="D:\OPER\CORREOS\WINDOWS\RV Procedimiento.msg" alt="" onmouseover="showTooltip('n432')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1545,848,1582,885" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Procedimientos%20WINDOWS/Tratamiento%20de%20incidencias%20de%20red.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n431')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1531,664,1665,687" href="\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF" alt="" onmouseover="showTooltip('n430')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1697,586,1825,613" href="\\metromadrid.net" alt="" onmouseover="showTooltip('n429')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1531,626,1665,654" href="http://recursosoperacion" alt="" onmouseover="showTooltip('n428')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1546,566,1575,582" href="D:\OPER\CORREOS\ENLACES\recopilación rutas de red compartidas entre OSUF (operadores) y resto SESSI.msg" alt="" onmouseover="showTooltip('n427')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1696,626,1826,654" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN" alt="" onmouseover="showTooltip('n426')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1696,669,1826,688" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\" alt="" onmouseover="showTooltip('n425')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1702,740,1818,763" href="\\metromadrid.net\Estamentos\Area de Prensa\Comunicacion\Protocolo de llamadas\PROTOCOLO DE LLAMADAS.docx" alt="" onmouseover="showTooltip('n424')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1531,587,1666,613" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\" alt="" onmouseover="showTooltip('n423')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1687,785,1754,807" href="\\via1" alt="" onmouseover="showTooltip('n422')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1762,785,1826,808" href="\\via2" alt="" onmouseover="showTooltip('n421')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1531,697,1665,720" href="\\16.0.4.251\CBTC\UC2 " alt="" onmouseover="showTooltip('n420')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1542,782,1566,811" href="D:\OPER\XWING\VIA1 (4099).lnk" alt="" onmouseover="showTooltip('n419')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1596,782,1619,811" href="D:\OPER\XWING\VIA2 (5000).lnk" alt="" onmouseover="showTooltip('n418')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1531,744,1665,766" href="\\almsamba.set.umi.net\mm_pr_trenes\ctc\serv1ctc\server" alt="" onmouseover="showTooltip('n417')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1696,699,1824,719" href="\\almsamba.set.umi.net\mm_pr_trenes\ctc\serv2ctc\server" alt="" onmouseover="showTooltip('n416')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1495,523,1855,976" alt="" onmouseover="showTooltip('n415')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1769,2507,1818,2555" href="D:\OPER\CORREOS\WINDOWS\RV Nueva Plataforma de correo.msg" alt="" onmouseover="showTooltip('n414')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1714,2632,1761,2682" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Programas%20Operaci%C3%B3n/Export%20import%20Configuracion%20Outlook.doc&action=default" alt="" onmouseover="showTooltip('n413')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1608,2767,1724,2790" href="\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF" alt="" onmouseover="showTooltip('n412')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1511,2753,1559,2804" href="D:\OPER\MANUALES\WINDOWS\MAQUETA OPERACION 64BITS\MAN-SC-INT-2625.doc" alt="" onmouseover="showTooltip('n411')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1697,2507,1746,2555" href="https://10.2.22.133:8445/loginPage.imss" alt="" onmouseover="showTooltip('n410')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1505,2507,1573,2574" href="\\metromadrid.net\softwarecorporativo$\Software Historico\UTILIDADES OSUF." alt="" onmouseover="showTooltip('n409')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1505,2638,1565,2698" href="http://vsr-sp:3006" alt="" onmouseover="showTooltip('n408')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1607,2638,1667,2698" href="http://gestdoc/default.aspx" alt="" onmouseover="showTooltip('n407')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1607,2515,1654,2566" href="D:\OPER\MANUALES\WINDOWS\PRO-OSUF-PUB-0003 - ENCENDIDO DE EQUIPOS CLIENTE EN REMOTO (WAKE ON LAN) final.doc" alt="" onmouseover="showTooltip('n406')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1654,2518,1683,2538" href="D:\OPER\CORREOS\WINDOWS\RE Encendido remoto de equipos tecnología Wake on LAN (WOL)..msg" alt="" target="_blank"/>
+  <area shape="rect" coords="1470,2433,1852,2946" alt="" onmouseover="showTooltip('n404')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="721,260,753,277" href="D:\OPER\CORREOS\GDL-MOREA\GDL - procedimiento provisional actuación errores log..msg" alt="" onmouseover="showTooltip('n403')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="745,262,782,299" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/GDL%20-%20procedimiento%20provisional%20actuaci%C3%B3n%20errores%20log%20GDL-TR.doc?Web=1" alt="" onmouseover="showTooltip('n402')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="525,264,557,309" href="C:\Consola de Monitorizacion GDL-TR\produccion\Acceso directo a Monitorizacion_GDL_TR.lnk" alt="" onmouseover="showTooltip('n401')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="868,340,905,377" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Procedimiento%20de%20comunicación%20de%20incidencias%20con%20el%20Puesto%20Central.doc" alt="" onmouseover="showTooltip('n400')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="404,260,449,305" href="D:\OPER\EJECUTABLES\TUTO_INSTALAR _CONSOLA_GD-TR-LEEME.txt" alt="" onmouseover="showTooltip('n399')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="787,350,824,387" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Lentitud%20en%20GDL.doc" alt="" onmouseover="showTooltip('n398')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="600,348,629,390" href="D:\OPER\XWING\MOREA1 (4090).lnk" alt="" onmouseover="showTooltip('n397')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="646,348,675,390" href="D:\OPER\XWING\MOREA2 (4091).lnk" alt="" onmouseover="showTooltip('n396')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="520,348,549,390" href="D:\OPER\XWING\VIA1 (4099).lnk" alt="" onmouseover="showTooltip('n395')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="559,348,590,390" href="D:\OPER\XWING\VIA2 (5000).lnk" alt="" onmouseover="showTooltip('n394')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="705,350,742,387" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/MOREA/Reinicio%20de%20Morea%20tras%20caída%20del%20servidor%20Maestro%20de%20GDL.doc" alt="" onmouseover="showTooltip('n393')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="836,262,873,299" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/MOREA/Parada%20y%20arranque%20de%20Morea%20sin%20roles%20definidos.doc" alt="" onmouseover="showTooltip('n392')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="587,262,624,299" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Consola%20de%20monitorización%20de%20GDL.%20Paradas,%20arranques%20y%20balanceos%20de%20GDL.%20Errores%20en%20el%20arranque.doc" alt="" onmouseover="showTooltip('n391')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="654,262,691,299" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Control%20manual%20de%20GDL-TR.doc" alt="" onmouseover="showTooltip('n390')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="453,260,492,283" href="D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html" alt="" onmouseover="showTooltip('n389')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="409,344,438,394" href="http://16.0.4.12/index2.html" alt="" onmouseover="showTooltip('n388')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="482,264,514,309" href="D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk" alt="" onmouseover="showTooltip('n387')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="455,335,505,391" href="http://salta.metromadrid.net:50000/consolamorea" alt="" onmouseover="showTooltip('n386')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="378,218,953,443" href="D:\OPER\FLUJOS\SAP_SISTEMAS_MULTIPLATAFORMA.html" alt="" onmouseover="showTooltip('n385')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="249,1897,288,1916" alt="" onmouseover="showTooltip('n383')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="209,1938,249,1973" href="http://baruta0z1p.metromadrid.net:8001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n382')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="398,2014,443,2059" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/GTL/GTL.%20Mapa.doc" alt="" onmouseover="showTooltip('n381')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="200,2016,240,2051" href="http://baruta1z1d.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n380')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="117,2016,156,2051" href="http://baruta1z2t.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n379')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="401,1913,440,1953" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Reinicio%20servers%20aplicaciones%20weblogic.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n378')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="327,2016,372,2062" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/GTL/GTL.%20Procedimiento%20de%20urgencia.doc" alt="" onmouseover="showTooltip('n377')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="296,1938,335,1973" href="http://baruta0z1p.metromadrid.net:7001/console/console.portal?_nfpb=true&_pageLabel=CoreServerServerTablePage" alt="" onmouseover="showTooltip('n376')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="117,1938,156,1973" href="http://baruta0z1p.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n375')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="66,1815,492,2117" alt="" onmouseover="showTooltip('n374')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="975,1658,1024,1707" href="http://gestdoc/HOMOLOGACION/Procedimientos%20Técnicos/MAN-SC-INT-2214.doc" alt="" onmouseover="showTooltip('n373')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1105,1494,1145,1535" href="https://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L01_3&iPlanetDirectoryPro=AQIC5wM2LY4Sfcy7habjHxW476WlfapeeJZ%2F%2F1IwJD4%2FyUw%3D%40AAJTSQACMDMAAlNLAAk0MDgyMDU1NDYAAlMxAAIwMg%3D%3D%23" alt="" onmouseover="showTooltip('n372')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1460,1645,1501,1687" href="http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n371')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1341,1645,1390,1695" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ARCO/Procedimiento%20de%20actuación%20por%20incidencias%20en%20ARCO.doc" alt="" onmouseover="showTooltip('n370')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1312,1643,1354,1663" href="D:\OPER\FLUJOS\ARCO INCIDENCIAS NO PINTAN TRENES O CONDUCTORES.html" alt="" onmouseover="showTooltip('n369')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1265,1649,1306,1691" href="https://amldap.bcm.metromadrid.net/amserver/gateway?goto=https%3A%2F%2Farco.metromadrid.net%3A443%2Farco%2Findex.jsp" alt="" onmouseover="showTooltip('n368')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1716,1571,1756,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L12_2" alt="" onmouseover="showTooltip('n367')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1662,1571,1702,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L12_1" alt="" onmouseover="showTooltip('n366')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1614,1571,1654,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadhttps://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L11_3" alt="" onmouseover="showTooltip('n365')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1567,1571,1606,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L11_2" alt="" onmouseover="showTooltip('n364')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1520,1571,1560,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L10_8" alt="" onmouseover="showTooltip('n363')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1473,1571,1513,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L10_5" alt="" onmouseover="showTooltip('n362')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1422,1571,1461,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L10_4" alt="" onmouseover="showTooltip('n361')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1370,1571,1410,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L10_1" alt="" onmouseover="showTooltip('n360')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1318,1571,1358,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L09_7" alt="" onmouseover="showTooltip('n359')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1265,1571,1305,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L09_5" alt="" onmouseover="showTooltip('n358')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1213,1571,1252,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L09_4" alt="" onmouseover="showTooltip('n357')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,1571,1200,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L09_1" alt="" onmouseover="showTooltip('n356')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1105,1571,1145,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L08_3" alt="" onmouseover="showTooltip('n355')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1057,1571,1096,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L08_2" alt="" onmouseover="showTooltip('n354')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1004,1571,1044,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L07_8" alt="" onmouseover="showTooltip('n353')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="958,1571,998,1612" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L07_6" alt="" onmouseover="showTooltip('n352')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1710,1495,1749,1536" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L07_3" alt="" onmouseover="showTooltip('n351')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1661,1495,1701,1536" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L07_1" alt="" onmouseover="showTooltip('n350')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1615,1495,1653,1536" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L06_4" alt="" onmouseover="showTooltip('n349')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1568,1494,1607,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L06_1" alt="" onmouseover="showTooltip('n348')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1520,1494,1560,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L05_3" alt="" onmouseover="showTooltip('n347')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1472,1494,1511,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L05_2" alt="" onmouseover="showTooltip('n346')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1423,1494,1463,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L04_4" alt="" onmouseover="showTooltip('n345')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1371,1494,1411,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L04_1" alt="" onmouseover="showTooltip('n344')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1319,1494,1359,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L03_3" alt="" onmouseover="showTooltip('n343')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1267,1494,1306,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L03_2" alt="" onmouseover="showTooltip('n342')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1162,1494,1201,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L02_1" alt="" onmouseover="showTooltip('n341')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1214,1494,1254,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L02_4" alt="" onmouseover="showTooltip('n340')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1059,1494,1099,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L01_2" alt="" onmouseover="showTooltip('n339')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1004,1494,1044,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L01_2" alt="" onmouseover="showTooltip('n338')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="958,1494,998,1535" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?&user=PS0220&goto=http://arco.metromadrid.net/arco/arcoTCC.jsp?idtcc=L01_1" alt="" onmouseover="showTooltip('n337')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="930,1448,1806,1808" alt="" onmouseover="showTooltip('n336')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="121,1743,163,1785" href="http://progenadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n334')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="178,1656,361,1674" alt="" onmouseover="showTooltip('n333')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="98,1674,139,1716" href="http://progenadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n332')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="169,1674,211,1716" href="http://mendoza2.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n331')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="243,1674,285,1716" href="http://formosa1.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n330')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="328,1674,370,1716" href="http://bus1proadm.metromadrid.net:7001/console " alt="" onmouseover="showTooltip('n329')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="275,1510,317,1552" href="http://jalpa.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n328')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="201,1510,242,1552" href="http://pregenadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n327')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="121,1510,163,1552" href="http://progenadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n326')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="135,1620,187,1644" alt="" onmouseover="showTooltip('n325')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="235,1620,287,1644" alt="" onmouseover="showTooltip('n324')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="318,1521,356,1541" href="D:\OPER\CORREOS\WEBLOGIC\RE MIGWLS12 Estado migración de aplicaciones Java a WLS 12.msg" alt="" onmouseover="showTooltip('n323')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="272,1584,287,1603" href="D:\OPER\XWING\JATAI (5239) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n322')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="240,1584,253,1603" href="D:\OPER\XWING\JACHIN (5239) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n321')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="135,1585,149,1604" href="D:\OPER\XWING\JUPITER (5238) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n320')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="169,1585,183,1604" href="D:\OPER\XWING\JUNO (5237) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n319')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="330,1585,345,1602" href="D:\OPER\XWING\JALPA (5241) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n318')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="66,1447,492,1833" alt="" onmouseover="showTooltip('n317')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="663,1539,703,1558" alt="" onmouseover="showTooltip('n316')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="778,1578,818,1618" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Reinicio%20servers%20aplicaciones%20weblogic.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n315')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="676,1675,724,1725" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ARCO/Procedimiento%20de%20actuaci%C3%B3n%20por%20incidencias%20en%20ARCO.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n314')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="647,1674,689,1694" href="D:\OPER\FLUJOS\ARCO INCIDENCIAS NO PINTAN TRENES O CONDUCTORES.html" alt="" onmouseover="showTooltip('n313')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="584,1574,625,1615" href="http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n312')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="777,1676,818,1718" href="http://beaproadm.metromadrid.net:7001/console/login/LoginForm.jsp" alt="" onmouseover="showTooltip('n311')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="547,1676,588,1718" href="https://amldap.bcm.metromadrid.net/amserver/gateway?goto=https%3A%2F%2Farco.metromadrid.net%3A443%2Farco%2Findex.jsp" alt="" onmouseover="showTooltip('n310')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="723,1580,750,1615" href="D:\OPER\XWING\BAYAMO3 (4062-OK).lnk" alt="" onmouseover="showTooltip('n309')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="663,1580,693,1615" href="D:\OPER\XWING\BARACOA3 (4058-OK).lnk" alt="" onmouseover="showTooltip('n308')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="595,1718,624,1742" href="D:\OPER\CORREOS\ARCO\Comprobar SAER(ARCO) Parada BBDD BEAP madrugada SABADO.msg" alt="" onmouseover="showTooltip('n307')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="496,1446,918,1808" alt="" onmouseover="showTooltip('n306')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="784,1915,830,1960" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/VISA/VISA.%20Reinicio%20de%20servers.doc" alt="" onmouseover="showTooltip('n305')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="716,1939,743,1972" href="D:\OPER\XWING\BAYAMO1.lnk" alt="" onmouseover="showTooltip('n304')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="656,1939,684,1972" href="D:\OPER\XWING\BARACOA1.lnk" alt="" onmouseover="showTooltip('n303')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="632,2010,682,2054" href="http://visadesadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n302')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="754,2010,801,2053" href="http://visapreadm.metromadrid.net:7101/console" alt="" onmouseover="showTooltip('n301')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="574,1936,612,1975" href="http://visaproadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n300')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="680,1897,720,1916" alt="" onmouseover="showTooltip('n299')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="498,1814,918,2117" alt="" onmouseover="showTooltip('n298')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="562,2281,611,2330" href="http://recursosoperacion/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Copias/Snap%20de%20Documentum.doc" alt="" onmouseover="showTooltip('n297')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="684,2288,718,2323" href="https://documentum.metromadrid.net/webtop/component/main?__dmfClientId=1184237358460" alt="" onmouseover="showTooltip('n296')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="788,2183,826,2224" href="http://buga.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n295')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="682,2184,719,2223" href="http://elmira.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n294')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="577,2180,614,2220" href="http://sanmateo.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n293')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="496,2122,918,2390" alt="" onmouseover="showTooltip('n292')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="99,2230,139,2270" href="http://recursosoperacion/usi_Sistemas/Bases%20de%20datos/Export%20de%20SIARL%20sobre%20SIARR.dot" alt="" onmouseover="showTooltip('n290')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="387,2230,427,2270" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/SIAR/Reinicio,%20parada%20y%20arranque%20de%20nodos%20SIAR%20desde%20consola%20weblogic.doc" alt="" onmouseover="showTooltip('n289')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="225,2204,265,2222" alt="" onmouseover="showTooltip('n288')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="291,2239,321,2260" alt="" onmouseover="showTooltip('n287')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="185,2239,215,2260" alt="" onmouseover="showTooltip('n286')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="184,2261,215,2292" href="http://siarproadm.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n285')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="291,2264,322,2295" href="http://jackson2.metromadrid.net:7001/console" alt="" onmouseover="showTooltip('n284')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="70,2121,492,2388" alt="" onmouseover="showTooltip('n283')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="35,1379,1852,2425" alt="" onmouseover="showTooltip('n282')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1079,1242,1107,1270" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Relojes/Parada%20de%20LAN%20xx.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n281')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1005,1242,1033,1270" href="http://RECURSOSOPERACION/usi_Explotacion/Relojes/El%20reloj%20de%20fichajes%20da%20las%20gracias.doc" alt="" onmouseover="showTooltip('n280')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1079,1171,1107,1199" href="http://RECURSOSOPERACION/usi_Explotacion/Relojes/Incidencias%20de%20relojes%20en%20CRM.doc" alt="" onmouseover="showTooltip('n279')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,1167,1025,1202" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Sistemas Multiplataforma\Aplicaciones\Impresoras y relojes\relojes\terminales1.xlsx" alt="" onmouseover="showTooltip('n278')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="957,1133,1229,1364" alt="" onmouseover="showTooltip('n277')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="61,703,89,732" href="http://terni/arsys/shared/login.jsp?/arsys/home" alt="" onmouseover="showTooltip('n276')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="150,529,182,546" href="D:\OPER\CORREOS\COPIAS BACKUP\Comprobacion desde la global de ocupacion arch.msg" alt="" onmouseover="showTooltip('n275')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="150,511,181,528" href="D:\OPER\CORREOS\BACKUP-UNIX-WINDOWS\Mensaje critical de Networker (Petición de montaje).msg" alt="" onmouseover="showTooltip('n274')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="361,491,393,536" href="C:\Consola de Monitorizacion GDL-TR\produccion\Acceso directo a Monitorizacion_GDL_TR.lnk" alt="" onmouseover="showTooltip('n273')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="429,788,459,819" href="http://sgsit-spr/cestrack/default.aspx" alt="" onmouseover="showTooltip('n272')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="150,492,181,509" href="D:\OPER\CORREOS\INCIDENCIAS ELECTRICAS\Apagado repetido de SYMMETRYX en CTI.msg" alt="" onmouseover="showTooltip('n271')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="356,574,401,607" href="https://vsr-vcenter/ui/#" alt="" onmouseover="showTooltip('n270')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="283,487,323,510" href="D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html" alt="" onmouseover="showTooltip('n269')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="80,595,117,632" href="http://recursosoperacion/usi_Sistemas/Backup,%20almacenamiento%20y%20recuperacion/Windows/Manual%20de%20Operación%20del%20entorno%20de%20backup%20Windows.doc" alt="" onmouseover="showTooltip('n268')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="289,566,338,616" href="D:\OPER\EJECUTABLES\TUTO_INSTALAR _CONSOLA_GD-TR-LEEME.txt" alt="" onmouseover="showTooltip('n267')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="175,563,209,597" href="http://vsr-sql-report/OperationsManager/#/overview(name=Microsoft.SystemCenter.Monitoring.ViewFolder.Root)" alt="" onmouseover="showTooltip('n266')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="60,489,150,565" href="D:\OPER\EJECUTABLES\networker.BAT" alt="" onmouseover="showTooltip('n265')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="376,781,403,819" href="D:\OPER\XWING\BUENAVISTA (4066) ELDORADO.lnk" alt="" onmouseover="showTooltip('n264')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="168,624,216,671" href="C:\Program Files\CA\ARCserve Backup\careports.exe" alt="" onmouseover="showTooltip('n263')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="416,574,461,607" href="C:\Program Files\VMware\Infrastructure\Virtual Infrastructure Client\Launcher\VpxClient.exe" alt="" onmouseover="showTooltip('n262')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="249,621,283,662" href="D:\OPER\EJECUTABLES\Backup Windows\Jena y Chieti.cmd - Acceso directo.lnk" alt="" onmouseover="showTooltip('n261')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="188,493,223,528" href="C:\Program Files\OmniBack\bin\Manager.exe" alt="" onmouseover="showTooltip('n260')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="239,491,274,526" href="C:\Program Files\CA\ARCserve Backup\ARCserveMgr.exe" alt="" onmouseover="showTooltip('n259')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="297,491,329,536" href="D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk" alt="" onmouseover="showTooltip('n258')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="188,702,219,733" href="http://soporteti/" alt="" onmouseover="showTooltip('n257')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="119,702,149,732" href="http://sdne/index.asp" alt="" onmouseover="showTooltip('n256')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="121,771,158,808" href="https://verfirnomina.metromadrid.net/Iniciar.action" alt="" onmouseover="showTooltip('n255')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="426,487,473,540" href="D:\OPER\EJECUTABLES\ConsolaMorea.jar" alt="" onmouseover="showTooltip('n254')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="391,703,420,732" href="http://caceres/PLATON/EXPLOTACION/PortalContenido.nsf" alt="" onmouseover="showTooltip('n253')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="236,563,270,597" href="http://quevedo:8081/ITO_OP/ito_op_applet.html" alt="" onmouseover="showTooltip('n252')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="61,775,89,803" href="http://geometro.metromadrid.net:8080/GeoMetro/visor.jsp#" alt="" onmouseover="showTooltip('n251')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="431,703,460,732" href="https://clmjirap.metromadrid.net/secure/Dashboard.jspa" alt="" onmouseover="showTooltip('n250')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="332,702,361,732" href="http://codbarsap/" alt="" onmouseover="showTooltip('n249')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="249,703,277,732" href="http://terni/arsys/shared/login.jsp?/arsys/home" alt="" onmouseover="showTooltip('n248')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="334,659,443,693" href="D:\OPER\EJECUTABLES\REMOTO.BAT" alt="" onmouseover="showTooltip('n247')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="277,783,297,825" href="D:\OPER\XWING\MOREA1 (4090).lnk" alt="" onmouseover="showTooltip('n246')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="327,783,346,825" href="D:\OPER\XWING\MOREA2 (4091).lnk" alt="" onmouseover="showTooltip('n245')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="212,783,233,825" href="D:\OPER\XWING\VIA1 (4099).lnk" alt="" onmouseover="showTooltip('n244')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="237,783,258,825" href="D:\OPER\XWING\VIA2 (5000).lnk" alt="" onmouseover="showTooltip('n243')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="31,447,499,862" alt="" onmouseover="showTooltip('n242')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1182,116,1267,174" href="http://RECURSOSOPERACION/usi_Explotacion/Mapa%20Sistemas.xmind" alt="" onmouseover="showTooltip('n240')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1811,134,1896,198" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\OSUF\Operacion\YED\Procedimientos Operación.html" alt="" onmouseover="showTooltip('n239')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1002,109,1074,181" href="https://andencentral.metromadrid.net/webdynpro/dispatcher/sap.com/tc~sec~ume~wd~umeadmin/UmeAdminApp" alt="" onmouseover="showTooltip('n238')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="549,126,586,163" href="http://RECURSOSOPERACION/usi_Recintos/conexionado%20eléctrico%20v%204.0.docx" alt="" onmouseover="showTooltip('n237')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="635,126,672,163" alt="" onmouseover="showTooltip('n236')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1087,114,1156,177" href="https://andenlateral.metromadrid.net/irj/portal" alt="" onmouseover="showTooltip('n235')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="924,111,982,179" href="https://andencentral.metromadrid.net/irj/portal" alt="" onmouseover="showTooltip('n234')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="773,98,828,140" href="C:\Windows\System32\CMD.EXE" alt="" onmouseover="showTooltip('n233')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="384,185,514,210" href="http://RECURSOSOPERACION/usi_Recintos/CTI/c_n_distribucion.htm" alt="" onmouseover="showTooltip('n232')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="386,154,448,185" href="D:\OPER\CPD-CTI.jpg" alt="" onmouseover="showTooltip('n231')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="459,154,514,185" href="D:\OPER\CPD-CCS.jpg" alt="" onmouseover="showTooltip('n230')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="157,1275,188,1306" href="http://recursosoperacion/usi_Seguridad%20informatica/LDAP%20OPENDJ/RESUMEN%20LDAP%20y%20desbloqueo%20Usuarios.doc" alt="" onmouseover="showTooltip('n229')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="362,1201,397,1236" href="https://sgid.metromadrid.net/selfservice" alt="" onmouseover="showTooltip('n228')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="420,1275,457,1307" href="https://amldap.bcm.metromadrid.net/amserver/UI/Login?realm=usuarios" alt="" onmouseover="showTooltip('n227')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="82,1275,113,1306" href="http://RECURSOSOPERACION/usi_Seguridad%20informatica/LDAP%20OPENDJ/REINICIO%20OpenSSO%20(AC.MANAGER)%20OpenDJ%20(LDAP).doc" alt="" onmouseover="showTooltip('n226')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="295,1201,331,1237" href="https://gid.metromadrid.net/idm/suite/login.do" alt="" onmouseover="showTooltip('n225')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="414,1197,463,1240" href="D:\OPER\EJECUTABLES\JXplorer\JXplorer LDAP Browser.exe" alt="" onmouseover="showTooltip('n224')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="223,1199,261,1238" href="http://tpkld0p00.metromadrid.net/amserver/isAlive.jsp" alt="" onmouseover="showTooltip('n223')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="154,1199,191,1238" href="http://brtld0p.metromadrid.net/amserver/isAlive.jsp" alt="" onmouseover="showTooltip('n222')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="77,1199,113,1238" href="https://amldap.bcm.metromadrid.net/amserver/isAlive.jsp" alt="" onmouseover="showTooltip('n221')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="218,1286,245,1320" href="D:\OPER\XWING\TICUL (5202) - LAPLATA.lnk" alt="" onmouseover="showTooltip('n220')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="263,1286,290,1320" href="D:\OPER\XWING\CAMPECHE (4072).lnk" alt="" onmouseover="showTooltip('n219')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="372,1287,397,1320" href="D:\OPER\XWING\BOSTON1.lnk" alt="" onmouseover="showTooltip('n218')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="320,1286,345,1320" href="D:\OPER\XWING\BOSTON2.lnk" alt="" onmouseover="showTooltip('n217')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="31,1160,491,1365" alt="" onmouseover="showTooltip('n216')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1022,704,1043,719" href="D:\OPER\CORREOS\MENSAJERIA\RE Puesta en producción de nueva aplicación Movmet.msg" alt="" onmouseover="showTooltip('n215')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1170,792,1196,812" href="D:\OPER\CORREOS\OMU\Script que vigila agente en nosap.msg" alt="" onmouseover="showTooltip('n214')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1162,946,1199,983" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Consola%20SMS/Gesti%C3%B3n%20mensajer%C3%ADa.%20consola%20SMS.doc" alt="" onmouseover="showTooltip('n213')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1162,861,1199,898" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/Broker%20SMS/Gestión%20mensajería.%20Broker%20SMS.doc" alt="" onmouseover="showTooltip('n212')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,1031,1031,1068" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Movilidad/Notigestion/Notigestión.doc" alt="" onmouseover="showTooltip('n211')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1072,777,1106,811" href="http://dayton:8080/tarjetapost/" alt="" onmouseover="showTooltip('n210')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,777,1029,811" href="http://purcell:8080/tarjetapost/" alt="" onmouseover="showTooltip('n209')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1156,632,1190,666" href="https://icarodes.metromadrid.net/Icaro" alt="" onmouseover="showTooltip('n208')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1073,632,1107,666" href="https://icaropre.metromadrid.net/Icaro" alt="" onmouseover="showTooltip('n207')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,632,1029,666" href="https://icaro.metromadrid.net/Icaro" alt="" onmouseover="showTooltip('n206')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1159,704,1194,739" href="https://consolanoticias.metromadrid.net/consolaNoticias/login.xhtml " alt="" onmouseover="showTooltip('n205')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1073,704,1107,739" href="https://serviciosmovilidad.metromadrid.es/movgetnoticias/" alt="" onmouseover="showTooltip('n204')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1156,559,1190,593" href="http://netrodes.metromadrid.net/netro " alt="" onmouseover="showTooltip('n203')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,704,1029,739" href="https://serviciosmovilidad.metromadrid.es/movmetreg/  " alt="" onmouseover="showTooltip('n202')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1073,559,1107,593" href="http://netropre.metromadrid.net/netro" alt="" onmouseover="showTooltip('n201')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,559,1029,593" href="http://netro.metromadrid.net/netro " alt="" onmouseover="showTooltip('n200')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1003,486,1043,526" href="https://sms.lleida.net/xmlapi/smsgw.cgi" alt="" onmouseover="showTooltip('n199')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,1030,1200,1069" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/MetroSMS/Diagrama%20MetroSMS.jpg" alt="" onmouseover="showTooltip('n198')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1077,1031,1114,1068" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/MetroSMS/MetroSMS-Manual%20Explotación%20v2.2.doc" alt="" onmouseover="showTooltip('n197')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,946,1031,983" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/NETRO%20Notificaciones%20Push/Manual%20de%20Explotación%20NETRO.doc" alt="" onmouseover="showTooltip('n196')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="994,861,1031,898" href="D:\OPER\MANUALES\Manual de Explotación MOVMET v1 1 (3).doc" alt="" onmouseover="showTooltip('n195')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1077,861,1114,898" href="http://recursosoperacion/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ICARO%20Mobile/Manual%20común%20de%20Arquitectura%20ICARO.doc" alt="" onmouseover="showTooltip('n194')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1077,946,1114,983" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20Weblogic%20Java/ICARO%20Mobile/Manual%20de%20Explotación%20ICARO.doc" alt="" onmouseover="showTooltip('n193')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1130,485,1171,526" href="http://consolasms.metromadrid.net" alt="" onmouseover="showTooltip('n192')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1161,798,1186,831" href="D:\OPER\XWING\NOSAP (4093).lnk" alt="" onmouseover="showTooltip('n191')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="956,447,1229,1126" alt="" onmouseover="showTooltip('n190')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="272,340,315,387" href="http://recursosoperacion/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Lista%20distribución%20de%20personas%20aplicaciones-servicios%20UNIX_Windows%20v2.3.xls" alt="" onmouseover="showTooltip('n189')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="108,336,154,390" href="D:\OPER\ORGANIGRAMA DEL SERVICIO.png" alt="" onmouseover="showTooltip('n188')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="261,219,301,242" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla3 Restauración del Servicio.msg" alt="" onmouseover="showTooltip('n187')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="148,219,187,242" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla2 Informe de situación.msg" alt="" onmouseover="showTooltip('n186')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="261,134,301,157" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Servicio degradado .msg" alt="" onmouseover="showTooltip('n185')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="148,134,187,157" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla1 Pérdida de Servicio Crítico.msg" alt="" onmouseover="showTooltip('n184')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="86,140,125,182" href="http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Incidencias%20en%20Sistemas%20Informáticos%20para%20incluir%20en%20el%20Parte%20Diario%20de%20COMMIT.msg" alt="" onmouseover="showTooltip('n183')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="87,227,124,264" href="http://recursosoperacion/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Procedimiento%20por%20pérdida%20de%20servicios%20críticos%20v2.3.doc" alt="" onmouseover="showTooltip('n182')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="173,224,217,267" href="http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Correo%20Plantilla2%20Informe%20de%20situación.msg" alt="" onmouseover="showTooltip('n181')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="283,223,328,268" href="http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Correo%20Plantilla3%20Restauración%20del%20Servicio.msg" alt="" onmouseover="showTooltip('n180')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="281,139,331,184" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Servicio degradado .msg" alt="" onmouseover="showTooltip('n179')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="173,139,223,184" href="http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Correo%20Plantilla1%20Pérdida%20de%20Servicio%20Crítico.msg" alt="" onmouseover="showTooltip('n178')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="201,134,241,157" href="D:\OPER\flujos\CAIDAS CRITICAS FLUJO.html" alt="" onmouseover="showTooltip('n177')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="62,304,348,320" href="http://RECURSOSOPERACION/usi_Operacion/PÉRDIDA%20DE%20SERVICIOS%20CRÍTICOS/Listas%20de%20correo%20de%20caídas%20críticas.txt" alt="" onmouseover="showTooltip('n176')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="30,93,376,443" alt="" onmouseover="showTooltip('n175')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="682,1225,925,1320" alt="" onmouseover="showTooltip('n174')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="816,1127,851,1162" href="D:\OPER\S  A  P\SPR CAPP - Aprobar horarios.sap" alt="" onmouseover="showTooltip('n173')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="585,1225,630,1271" href="D:\OPER\EJECUTABLES\leeme_saplogon_ini.txt" alt="" onmouseover="showTooltip('n172')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="512,1219,569,1277" href="C:\Program Files\SAP\FrontEnd\SAPgui\" alt="" onmouseover="showTooltip('n171')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="842,1055,877,1091" href="D:\OPER\S  A  P\SPR SE16 - VER DATOS TARJETAS.sap" alt="" onmouseover="showTooltip('n170')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="788,1055,823,1091" href="D:\OPER\S  A  P\SPR SM30 TARJETAS CONTRATAS.sap" alt="" onmouseover="showTooltip('n169')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="735,1055,770,1090" href="D:\OPER\S  A  P\SPR SP01 - CONTROL SALIDA IMPRESORAS.sap" alt="" onmouseover="showTooltip('n168')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="689,1058,722,1091" href="D:\OPER\S  A  P\SPR SAPAD - GESTION SPOOL DE IMPRESORAS.sap" alt="" onmouseover="showTooltip('n167')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="834,983,869,1019" href="D:\OPER\S  A  P\DSR - SAPDESA.sap" alt="" onmouseover="showTooltip('n166')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="877,983,912,1019" href="D:\OPER\S  A  P\PLD PLD (UTAH).sap" alt="" onmouseover="showTooltip('n165')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="744,983,779,1019" href="D:\OPER\S  A  P\FRM - HARVARD.sap" alt="" onmouseover="showTooltip('n164')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="789,983,824,1019" href="D:\OPER\S  A  P\BWD - PASADENA.sap" alt="" onmouseover="showTooltip('n163')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="717,919,752,954" href="D:\OPER\S  A  P\SMP - NAPA.sap" alt="" onmouseover="showTooltip('n162')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="877,918,912,953" href="D:\OPER\S  A  P\PLP SAP.sap" alt="" onmouseover="showTooltip('n161')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="821,918,856,953" href="D:\OPER\S  A  P\RPP SAP.sap" alt="" onmouseover="showTooltip('n160')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="769,918,804,953" href="D:\OPER\S  A  P\BWP - RIOTINTO.sap" alt="" onmouseover="showTooltip('n159')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="700,984,735,1019" href="D:\OPER\S  A  P\PRP - PREPROP1.sap" alt="" onmouseover="showTooltip('n158')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="646,918,681,953" href="D:\OPER\S  A  P\SPR SPR - PRODUBD.sap" alt="" onmouseover="showTooltip('n157')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="658,982,690,999" href="D:\OPER\CORREOS\SAP\RE Libro de Sala ASI - SAP - SPR - Criticidad Muy Alta - Estado Comunicado.msg" alt="" onmouseover="showTooltip('n156')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="622,980,666,1023" href="http://napa.metromadrid.net:8002/jobs" alt="" onmouseover="showTooltip('n155')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="588,1124,626,1162" href="https://gemacti.metromadrid.net/gema-web/login.do;jsessionid=C95852D4330BF0950217D88AB1056CC2" alt="" onmouseover="showTooltip('n154')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="539,979,582,1022" href="https://napa.metromadrid.net:8443/rcs" alt="" onmouseover="showTooltip('n153')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="660,1124,701,1165" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Abap/GEMA/GEMA.%20Procesos%20EMX%20y%20TOMCAT.doc" alt="" onmouseover="showTooltip('n152')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="881,1129,927,1175" href="http://RECURSOSOPERACION/usi_Explotacion/SAP.%20Generico/Problemática%20con%20jobs/Job%20abortado.doc" alt="" onmouseover="showTooltip('n151')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="743,1123,786,1166" href="http://RECURSOSOPERACION/usi_Explotacion/Aplicaciones%20SAP%20Abap/GDL/Alta%20-%20Baja%20-%20Miigración%20de%20equipo%20en%20GDL%20(Transacción%20ZLAK).doc" alt="" onmouseover="showTooltip('n150')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="890,1056,925,1091" href="D:\OPER\S  A  P\SPR ZLAK - ALTAS-BAJAS GDL.sap" alt="" onmouseover="showTooltip('n149')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="569,1124,598,1139" href="D:\OPER\CORREOS\SAP\Nuevo módulo en SAP. SD (Comercial (Gestión de Ventas))..msg" alt="" onmouseover="showTooltip('n148')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="519,1121,556,1159" href="D:\OPER\EXCELL´S\Modulos de SAP en Metro.xls" alt="" onmouseover="showTooltip('n147')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="530,1057,563,1091" href="D:\OPER\S  A  P\SPR SM37 -  JOBS RESUMEN.sap" alt="" onmouseover="showTooltip('n146')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="640,1055,675,1090" href="D:\OPER\S  A  P\SPR SMTS -  ORDENES DE TRANSPORTE.sap" alt="" onmouseover="showTooltip('n145')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="585,1056,619,1091" href="D:\OPER\S  A  P\SPR SU01 - ACTUALIZACIÓN USUARIOS.sap" alt="" onmouseover="showTooltip('n144')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="523,917,624,954" href="D:\OPER\FLUJOS\SERVIDORES SAP SPR.png" alt="" onmouseover="showTooltip('n143')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="491,864,951,1364" alt="" onmouseover="showTooltip('n142')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="813,733,850,770" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Netplus/Estadisticas%20diarias%20de%20EMV.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n141')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="880,750,917,787" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/BIT/Ejecutar%20la%20carga%20de%20las%20listas%20negras%20manualmente.docx&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n140')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="895,743,926,760" href="D:\OPER\CORREOS\PAGO ELECTRONICO\RE BIT No hay Lista Negra para hoy (telesecebit).msg" alt="" onmouseover="showTooltip('n139')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="785,662,844,686" href="D:\OPER\FLUJOS\INCIDENCIAS_OPERACIONES_TARJETAS.html" alt="" onmouseover="showTooltip('n138')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="819,671,939,709" href="D:\OPER\FLUJOS\INCIDENCIAS_OPERACIONES_TARJETAS.html" alt="" onmouseover="showTooltip('n137')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="728,730,765,767" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/BIT/SECEBIT.%20Monitorización.doc" alt="" onmouseover="showTooltip('n136')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="721,564,758,601" href="D:\OPER\MANUALES\PAGO ELECTRONICO\Inserción de las operaciones de netplus en la BBDD de Gesreve.docx" alt="" onmouseover="showTooltip('n135')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="641,730,678,767" href="http://recursosoperacion/usi_Explotacion/Venta%20y%20peaje/BIT/Equipos%20para%20venta%20de%20tarjetas%20de%20transporte%20sin%20contacto.doc" alt="" onmouseover="showTooltip('n134')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="785,609,844,632" href="D:\OPER\FLUJOS\DIAGRAMA DE RED, SESIONES Y APLICACIONES DE EDITRAN.html" alt="" onmouseover="showTooltip('n133')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="818,613,938,652" href="D:\OPER\FLUJOS\Diagrama de red, sesiones y aplicaciones de editran.html" alt="" onmouseover="showTooltip('n132')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="788,544,846,567" alt="" onmouseover="showTooltip('n131')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="818,554,938,592" href="D:\OPER\FLUJOS\FICHEROS QUE RECIBIMOS Y ENVIAMOS.html" alt="" onmouseover="showTooltip('n130')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="788,488,846,512" href="D:\OPER\FLUJOS\INCIDENCIAS CON EL MONTAJE DEL TUNEL.html" alt="" onmouseover="showTooltip('n129')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="818,499,938,537" href="D:\OPER\FLUJOS\INCIDENCIAS CON EL MONTAJE DEL TUNEL.html" alt="" onmouseover="showTooltip('n128')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="540,492,579,531" href="http://telesecebit.metromadrid.net/nagios/cgi-bin/history.cgi?host=all" alt="" onmouseover="showTooltip('n127')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="657,647,694,684" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/GESREVE/Procedimiento%20de%20comprobación%20y%20arranque%20de%20los%20procesos%20batch%20de%20Gesreve%20y%20Gespeaje.doc" alt="" onmouseover="showTooltip('n126')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="541,564,578,601" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Editran/Documentos%20anteriores/Envío%20diario%20de%20ficheros%20Editran.doc" alt="" onmouseover="showTooltip('n125')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="624,489,661,526" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Editran/Manual%20de%20Operaci%C3%B3n%20v.0.2.docx&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n124')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="546,647,583,684" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/GESREVE/GESREVE.%20Administración.doc" alt="" onmouseover="showTooltip('n123')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="624,564,661,601" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Pago%20electrónico%20-Netplus%20y%20Editran-.doc" alt="" onmouseover="showTooltip('n122')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="552,730,589,767" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Venta%20y%20peaje/BIT/SECEBIT.%20Monitorizaci%C3%B3n.doc&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n121')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="721,489,758,526" href="http://RECURSOSOPERACION/usi_Explotacion/Venta%20y%20peaje/Pago%20electronico/Netplus/Pago%20electrónico.%20Esquema.doc" alt="" onmouseover="showTooltip('n120')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="760,655,777,677" href="D:\OPER\XWING\POTOSI2 (4098).lnk" alt="" onmouseover="showTooltip('n119')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="723,654,742,677" href="D:\OPER\XWING\POTOSI1 (4097).lnk" alt="" onmouseover="showTooltip('n118')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="503,450,954,857" alt="" onmouseover="showTooltip('n117')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1390,2921,1425,2955" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Relojes/accesos_Cristalia.docx&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n116')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1255,3014,1281,3046" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosCristalia.bat" alt="" onmouseover="showTooltip('n115')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1184,3014,1210,3046" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosCristalia64bits.bat" alt="" onmouseover="showTooltip('n114')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1385,3010,1429,3057" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\servidores.xls" alt="" onmouseover="showTooltip('n113')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1192,2821,1232,2844" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Inventario%20de%20medios%20de%20backup%20de%20Windows.xls&action=default" alt="" onmouseover="showTooltip('n112')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1345,3140,1384,3163" href="http://recursosoperacion/usi_Operacion/Telefonos%20UTE%20IECISA%20SERMICRO.xlsx?Web=1" alt="" onmouseover="showTooltip('n111')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1325,3140,1375,3190" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Telefonos%20UTE%20IECISA%20SERMICRO.xlsx&action=default" alt="" onmouseover="showTooltip('n110')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1008,3156,1044,3190" href="http://recursosoperacion/usi_Operacion/Tecnico%20de%20guardia%202016.xls" alt="" onmouseover="showTooltip('n109')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1028,3139,1068,3162" href="http://recursosoperacion/usi_Operacion/Tecnico%20de%20guardia%202016.xls?Web=1" alt="" onmouseover="showTooltip('n108')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1097,3147,1140,3169" href="D:\OPER\EXCELL´S\telefonos_incidencias.xls" alt="" onmouseover="showTooltip('n107')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1249,3147,1288,3169" href="D:\OPER\EXCELL´S\Teléfonos.xls" alt="" onmouseover="showTooltip('n106')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="985,3139,1024,3162" href="D:\OPER\EXCELL´S\Tecnico de guardia 2016.xls" alt="" onmouseover="showTooltip('n105')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1106,3147,1166,3190" href="http://recursosoperacion/usi_Explotacion/telefonos_incidencias.xls" alt="" onmouseover="showTooltip('n104')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1208,3147,1269,3190" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/Tel%C3%A9fonos.xls&action=default" alt="" onmouseover="showTooltip('n103')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="959,3098,1439,3250" alt="" onmouseover="showTooltip('n102')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1326,2826,1366,2848" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/TARJETAS/Tarjetas%20contratas.xls&action=default" alt="" onmouseover="showTooltip('n101')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1036,2826,1080,2873" href="http://recursosoperacion/usi_Operacion/NUEVA%20Copia%20Semanal%20Noche.xls?Web=1" alt="" onmouseover="showTooltip('n100')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1301,3006,1365,3028" href="D:\OPER\FLUJOS\ENVIO_DIARIO_ACCESOS_RELOJES.html" alt="" onmouseover="showTooltip('n99')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="959,2828,1002,2875" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Operacion/NUEVA%20Copia%20Semanal%20Ma%C3%B1ana-Tarde.xls&action=default" alt="" onmouseover="showTooltip('n98')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1176,2826,1220,2873" href="http://RECURSOSOPERACION/usi_operacion/inventario de medios de backup de windows.xls" alt="" onmouseover="showTooltip('n97')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1312,2826,1355,2873" href="http://recursosoperacion/usi_Operacion/TARJETAS/Tarjetas%20contratas.xls" alt="" onmouseover="showTooltip('n96')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1108,2826,1152,2873" href="\\RECURSOSOPERACION\usi_Operacion\Turnos 2016.xls" alt="" onmouseover="showTooltip('n95')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1130,2821,1170,2844" href="http://recursosoperacion/usi_Operacion/Turnos%202016.xls?Web=1" alt="" onmouseover="showTooltip('n94')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1105,3014,1131,3046" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosRelojes64bits.bat" alt="" onmouseover="showTooltip('n93')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1032,3014,1059,3046" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesosRelojes.bat" alt="" onmouseover="showTooltip('n92')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,2915,1204,2961" href="\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\NIS2IPAEstadoMigracion.xls" alt="" onmouseover="showTooltip('n91')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1028,2915,1076,2966" href="\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\SERVIDORES UNIX.XLS" alt="" onmouseover="showTooltip('n90')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="957,2915,1004,2966" href="\\metromadrid.net\estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\SERVIDORES resumen.xls" alt="" onmouseover="showTooltip('n89')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1094,2915,1142,2966" href="D:\OPER\EXCELL´S\traer_servidor.xlsm" alt="" onmouseover="showTooltip('n88')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1379,2827,1422,2872" href="D:\OPER\EXCELL´S\Modulos de SAP en Metro.xls" alt="" onmouseover="showTooltip('n87')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1321,2921,1355,2955" href="http://RECURSOSOPERACION/usi_Operacion/Tareas%20habituales/Realización%20de%20estadísticas%20de%20Base%20de%20Datos%20(Proceso%20automático).doc" alt="" onmouseover="showTooltip('n86')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1321,3006,1355,3041" href="http://RECURSOSOPERACION/usi_Explotacion/Relojes/accesos_Seguridad.docx" alt="" onmouseover="showTooltip('n85')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1244,2826,1288,2873" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\invent_Impresoras.xls" alt="" onmouseover="showTooltip('n84')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1232,2915,1276,2962" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\bases de datos\BD_estadisticas_nueva.xls" alt="" onmouseover="showTooltip('n83')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="959,3006,1002,3053" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\accesos_com.xlsm" alt="" onmouseover="showTooltip('n82')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="922,2783,1487,3306" alt="" onmouseover="showTooltip('n81')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="143,971,186,1015" href="D:\OPER\MANUALES\GESTION DE IDENTIDADES\triptico gestion identidades.pdf" alt="" onmouseover="showTooltip('n573')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="128,904,151,921" href="D:\OPER\CORREOS\SEGURIDAD\Libro de Sala ASI - SEGURIDAD - VPN - Criticidad Normal - Estado Cerrado.msg" alt="" onmouseover="showTooltip('n80')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="56,904,89,923" href="D:\OPER\FLUJOS\DEFINICION PIN EN VPN.html" alt="" onmouseover="showTooltip('n79')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="399,1067,432,1100" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\llavero.kdbx" alt="" onmouseover="showTooltip('n78')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="339,1066,375,1101" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\COMUN\SO Y HARD\llavero.kdbx" alt="" onmouseover="showTooltip('n77')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="213,907,242,936" href="https://canalempresas.metromadrid.es/dana-na/auth/url_1/welcome.cgi" alt="" onmouseover="showTooltip('n76')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="194,1050,238,1093" href="D:\OPER\MANUALES\GESTION DE IDENTIDADES\SGId_Manual cambio contraseñas para OPERADORES.pdf" alt="" onmouseover="showTooltip('n75')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="138,1056,169,1087" href="https://sgid.metromadrid.net/selfservice" alt="" onmouseover="showTooltip('n74')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="387,981,439,1001" href="D:\OPER\FLUJOS\CNPIC.html" alt="" onmouseover="showTooltip('n73')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="69,971,113,1015" href="D:\OPER\MANUALES\VPN\Definicionde PIN con TS para Windows.pdf" alt="" onmouseover="showTooltip('n72')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="151,908,179,936" href="https://pullman.metromadrid.net/" alt="" onmouseover="showTooltip('n71')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="83,905,113,935" href="https://yakima.metromadrid.net/" alt="" onmouseover="showTooltip('n70')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="288,973,332,1021" href="D:\OPER\EJECUTABLES\ESCRITORIO REMOTOS\REMOTO CNPIC ESC60711.rdp" alt="" onmouseover="showTooltip('n69')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="399,1006,428,1021" href="D:\OPER\CORREOS\SEGURIDAD\RE Procedimiento para la actuación ante la llegada de correos cifrados del CNPIC .msg" alt="" onmouseover="showTooltip('n68')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="363,985,400,1022" href="http://RECURSOSOPERACION/usi_Seguridad%20informatica/CNPIC/Procedimiento%20Correos%20Cifrados%20CNPIC.doc" alt="" onmouseover="showTooltip('n67')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="226,981,258,1013" href="D:\OPER\MANUALES\SEGURIDAD\Definicion de PIN.pdf" alt="" onmouseover="showTooltip('n66')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="268,1061,300,1093" href="http://RECURSOSOPERACION/usi_Seguridad%20informatica/VPN/Monitorizar%20VPN.doc" alt="" onmouseover="showTooltip('n65')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="69,1054,100,1085" href="https://gid.metromadrid.net/idm/suite/login.do" alt="" onmouseover="showTooltip('n64')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="426,912,462,950" href="D:\OPER\EJECUTABLES\KeePass-2.30 (Portable)\KeePass.exe" alt="" onmouseover="showTooltip('n63')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="365,914,399,948" href="D:\OPER\EJECUTABLES\Encorein_ASI.exe - Acceso directo.lnk" alt="" onmouseover="showTooltip('n62')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="273,907,301,936" href="https://oficinaremota.metromadrid.es" alt="" onmouseover="showTooltip('n61')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="31,866,491,1149" href="S:\OPER\MANUALES\GESTION DE IDENTIDADES\SGId_Manual cambio contraseñas para OPERADORES.pdf" alt="" onmouseover="showTooltip('n60')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1411,480,1451,501" href="D:\OPER\FLUJOS\ALTA_MODIFICACION_IMPRESORAS_SAP.html" alt="" onmouseover="showTooltip('n59')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1388,646,1425,683" href="http://recursosoperacion/_layouts/15/WopiFrame.aspx?sourcedoc=/usi_Explotacion/Impresoras/tipos_dispositivos_SAP.docx&action=default&DefaultItemOpen=1" alt="" onmouseover="showTooltip('n58')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1386,483,1423,520" href="http://recursosoperacion/usi_Explotacion/Impresoras/Alta%20de%20impresoras%20en%20SAP.doc" alt="" onmouseover="showTooltip('n57')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1276,480,1313,517" href="http://recursosoperacion/usi_Explotacion/Impresoras/Baja%20de%20impresoras%20en%20SAP.doc" alt="" onmouseover="showTooltip('n56')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1391,564,1428,601" href="http://recursosoperacion/usi_Explotacion/Impresoras/Impresoras%20CRM.doc" alt="" onmouseover="showTooltip('n55')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1386,399,1433,450" href="\\metromadrid.net\Estamentos\Ser. Expl. Sistemas y Seg. Informatica\Infraestructura Informatica\INTERCAMBIO\invent_Impresoras.xls" alt="" onmouseover="showTooltip('n54')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1276,559,1313,596" href="http://RECURSOSOPERACION/usi_Explotacion/Impresoras/Impresión%20códigos%20de%20barra%20con%20SAPSCRIPT%20(BARSTORM).doc" alt="" onmouseover="showTooltip('n53')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1269,318,1314,363" href="http://terni/arsys/shared/login.jsp?/arsys/home" alt="" onmouseover="showTooltip('n52')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1388,316,1431,359" href="http://h22168.www2.hp.com/us/en/partners/sap/drivers-for-sap-printing.aspx" alt="" onmouseover="showTooltip('n51')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1273,405,1318,450" href="http://codbarsap/" alt="" onmouseover="showTooltip('n50')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1297,393,1337,414" href="HTTP://IMp30449" alt="" onmouseover="showTooltip('n49')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1235,227,1489,765" alt="" onmouseover="showTooltip('n48')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1391,2579,1455,2601" href="D:\OPER\FLUJOS\ALTAS_BAJAS_INACTIVAS  DE TARJETAS CONTRATAS.html" alt="" onmouseover="showTooltip('n47')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1234,2669,1273,2692" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Estadísticas de Pago Electrónico.msg" alt="" onmouseover="showTooltip('n46')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,2669,1199,2692" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Problemas con ficheros CTCCBTC.msg" alt="" onmouseover="showTooltip('n45')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1095,2669,1135,2692" href="D:\OPER\CORREOS\IMPRESORAS\MODULO PM.msg" alt="" onmouseover="showTooltip('n44')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1012,2669,1051,2692" href="D:\OPER\CORREOS\IMPRESORAS\MODULO MM.msg" alt="" onmouseover="showTooltip('n43')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="947,2669,987,2692" href="D:\OPER\CORREOS\IMPRESORAS\GC y Almacenes.msg" alt="" onmouseover="showTooltip('n42')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1311,2565,1350,2587" href="D:\OPER\CORREOS\TARJETAS\Tarjetas inactivas.msg" alt="" onmouseover="showTooltip('n41')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1234,2565,1273,2587" href="D:\OPER\CORREOS\TARJETAS\Baja de tarjetas de contrata.msg" alt="" onmouseover="showTooltip('n40')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1160,2565,1199,2587" href="D:\OPER\CORREOS\TARJETAS\Alta de tarjetas de contrata.msg" alt="" onmouseover="showTooltip('n39')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1091,2567,1130,2590" href="D:\OPER\CORREOS\INFORMACION INCIDENCIAS NO CRITICAS\Incidencias para incluir en el Parte Diario de COMMIT.msg" alt="" onmouseover="showTooltip('n38')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1017,2567,1056,2590" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Disponibilidad de Morea.msg" alt="" onmouseover="showTooltip('n37')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="943,2567,982,2590" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio de Morea.msg" alt="" onmouseover="showTooltip('n36')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1384,2465,1424,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Incidencia en SAGIR en la hojaruta.msg" alt="" onmouseover="showTooltip('n35')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1307,2465,1346,2488" href="D:\OPER\CORREOS\CAIDAS CRITICAS\PLANTILLAS CAIDAS CRITICAS\Correo Plantilla1 Pérdida de Servicio Crítico.msg" alt="" onmouseover="showTooltip('n34')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1237,2465,1277,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio servidores ARCO.msg" alt="" onmouseover="showTooltip('n33')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1165,2465,1204,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Reinicio urgente de quioscos ARCO.msg" alt="" onmouseover="showTooltip('n32')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1095,2465,1135,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Alta de equipo en GDL-TR.msg" alt="" onmouseover="showTooltip('n31')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1018,2465,1057,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Balanceo del Maestro de GDL.msg" alt="" onmouseover="showTooltip('n30')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="947,2465,987,2488" href="D:\OPER\CORREOS\Plantillas Comunicaciones Operadores\Balanceo del Esclavo de GDL.msg" alt="" onmouseover="showTooltip('n29')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="947,2590,987,2632" href="http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Reinicio%20de%20Morea.msg" alt="" onmouseover="showTooltip('n28')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1017,2590,1056,2632" href="http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Disponibilidad%20de%20Morea.msg" alt="" onmouseover="showTooltip('n27')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1165,2685,1204,2727" href="http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Problemas%20con%20ficheros%20CTCCBTC.msg" alt="" onmouseover="showTooltip('n26')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="951,2689,990,2731" href="http://recursosoperacion/usi_Explotacion/Impresoras/GC%20y%20Almacenes.msg" alt="" onmouseover="showTooltip('n25')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1095,2689,1135,2731" href="http://recursosoperacion/usi_Explotacion/Impresoras/MODULO%20PM.msg" alt="" onmouseover="showTooltip('n24')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1017,2689,1056,2731" href="http://recursosoperacion/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/MODULO%20MM.msg" alt="" onmouseover="showTooltip('n23')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1385,2601,1422,2638" href="http://recursosoperacion/usi_Operacion/TARJETAS/Gestión%20de%20tarjetas%20de%20contrata.doc" alt="" onmouseover="showTooltip('n22')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1315,2486,1354,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Información%20del%20reinicio%20servidores%20ARCO.msg" alt="" onmouseover="showTooltip('n21')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1242,2486,1281,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Reinicio%20servidores%20ARCO.msg" alt="" onmouseover="showTooltip('n20')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1168,2486,1207,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Reinicio%20urgente%20de%20quioscos%20ARCO.msg" alt="" onmouseover="showTooltip('n19')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1384,2486,1423,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Incidencia%20en%20SAGIR%20en%20la%20hojaruta.msg" alt="" onmouseover="showTooltip('n18')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1095,2590,1135,2632" href="D:\OPER\CORREOS\INFORMACION INCIDENCIAS NO CRITICAS\Incidencias para incluir en el Parte Diario de COMMIT.msg" alt="" onmouseover="showTooltip('n17')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1242,2689,1281,2731" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Estadísticas%20de%20Pago%20Electrónico.msg" alt="" onmouseover="showTooltip('n16')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1314,2587,1353,2629" href="http://recursosoperacion/usi_Operacion/TARJETAS/Tarjetas%20inactivas.msg" alt="" onmouseover="showTooltip('n15')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1242,2590,1282,2632" href="http://recursosoperacion/usi_Operacion/TARJETAS/Baja%20de%20tarjetas%20de%20contrata.msg" alt="" onmouseover="showTooltip('n14')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1165,2590,1204,2632" href="http://recursosoperacion/usi_Operacion/TARJETAS/Alta%20de%20tarjetas%20de%20contrata.msg" alt="" onmouseover="showTooltip('n13')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1095,2486,1135,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Alta%20de%20equipo%20en%20GDL-TR.msg" alt="" onmouseover="showTooltip('n12')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="1020,2486,1059,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Balanceo%20del%20Maestro%20de%20GDL.msg" alt="" onmouseover="showTooltip('n11')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="947,2486,987,2528" href="http://RECURSOSOPERACION/usi_Operacion/Plantillas%20Comunicaciones%20Operadores/Balanceo%20del%20Esclavo%20de%20GDL.msg" alt="" onmouseover="showTooltip('n10')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="923,2429,1500,2784" alt="" onmouseover="showTooltip('n9')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="705,156,826,194" href="http://recursosoperacion" alt="" onmouseover="showTooltip('n6')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="826,156,911,194" href="https://16.2.9.12/asi/" alt="" onmouseover="showTooltip('n5')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="15,15,4339,9149" alt="" onmouseover="showTooltip('n0')" onmouseout="hideTooltip()"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="ENLACES%20TRABAJO31_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+</body>
+</html>

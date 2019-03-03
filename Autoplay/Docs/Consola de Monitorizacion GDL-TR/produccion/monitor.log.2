@@ -1,0 +1,785 @@
+ago 19, 2016 8:54:29 AM metro.monitor.gui.ApplicationPrincipal main
+DETALLADO: classpath=D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar
+ago 19, 2016 8:54:44 AM metro.monitor.gui.RutinaChequeoDisco <init>
+DETALLADO: RutinaChequeoDisco.RutinaChequeoDisco - hostRemoto=via1, remoteUser=gdl, localuser=P03604
+ago 19, 2016 8:54:44 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:44 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:44 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:44 AM metro.monitor.gui.RemoteProcess recuperaSalida
+MÁS DETALLADO: RemoteProcess.recuperaSalida - la ejecución del comando ha ido mal : ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=13573
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+DETALLADO: Desde ServidorRemoto.compruebaEstadoReal - test1=false test2=true
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 1::setEstadoServidor - Cargando estado antiguo: Parado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 1 ha llamado a setRol con valor= INDEFINIDO ====> Lo actualizamos porque estáCargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyServerStateUpdate
+DETALLADO: ServidorPanel::notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 1
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyDiskOccupation
+DETALLADO: ServidorPanel::notifyDiskOccupation - 0 ... actualizamos ocupacion Disco: 1
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyClearLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyClearLoadTraces()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyNewLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyNewLoadTraces() - loadTraces.size()=0, increment.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyServerStateUpdate
+MÁS DETALLADO: CargaPanel.notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyClearLoadTraces
+MÁS DETALLADO: CargaPanel.notifyClearLoadTraces()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyNewLoadTraces
+MÁS DETALLADO: CargaPanel.notifyNewLoadTraces() - loadTraces.size()=0, increment.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto lanzaThreadCargaYEjecucion
+MÁS DETALLADO: ServidorRemoto.lanzaThreadCargaYEjecucion()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion inicializoTabla
+MÁS DETALLADO: TablaEjecucion.inicializoTabla()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion inicializoTabla
+MÁS DETALLADO: TablaEjecucion.inicializoTabla()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyDaemonStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyDaemonStateUpdate - newDaemonState=Parado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyServerStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyClearRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyClearRunTraces
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyClearDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyClearDaemonTraces
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyNewRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewRunTraces() - increment.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyNewDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewDaemonTraces() - increment.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto anyadeTrazasEjecucion
+DETALLADO: ServidorRemoto.anyadeTrazasEjecucion - Añadiendo 242 trazas
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY ESCLAVO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 1 ha llamado a setRol con valor= ESCLAVO ====> NO Lo actualizamos porque NO está ARRANCADO, será de una ejecución antigua
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 1
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto anyadeTrazasEjecucion
+DETALLADO: ServidorRemoto.anyadeTrazasEjecucion - ROL actualizado desde el fichero de trazas para el servidor nº:1, newRol=ESCLAVO
+
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY MAESTRO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 1 ha llamado a setRol con valor= MAESTRO ====> NO Lo actualizamos porque NO está ARRANCADO, será de una ejecución antigua
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 1
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto anyadeTrazasEjecucion
+DETALLADO: ServidorRemoto.anyadeTrazasEjecucion - ROL actualizado desde el fichero de trazas para el servidor nº:1, newRol=MAESTRO
+
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyNewRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewRunTraces() - increment.size()=242
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=242
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@1ed957d, _datos.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@f16568, _datos.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=242
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@1ed957d, _datos.size()=242
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=484
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ParserLogCargaActual leeTrazas
+DETALLADO: **************** Desde ParserLogCargaActual.leeTrazas - position = 0 ... llamamos:
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando false
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 1::setEstadoServidor - Cargando estado antiguo: CargandoLo ignoramos = false
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 1 ha llamado a setRol con valor= INDEFINIDO ====> Lo actualizamos porque estáCargando
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 1
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ParserLogCargaActual leeTrazas
+DETALLADO: **************** Desde ParserLogCargaActual.leeTrazas - FIN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto anyadeTrazasCarga
+DETALLADO: ServidorRemoto.anyadeTrazasCarga - Añadiendo 24 trazas
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel notifyNewLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyNewLoadTraces() - loadTraces.size()=24, increment.size()=24
+ago 19, 2016 8:54:45 AM metro.monitor.gui.CargaPanel notifyNewLoadTraces
+MÁS DETALLADO: CargaPanel.notifyNewLoadTraces() - loadTraces.size()=24, increment.size()=24
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=28137
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+DETALLADO: ServidorRemoto::setEstadoDemonio - Arrancado estado antiguo: Parado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyDaemonStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyDaemonStateUpdate - newDaemonState=Arrancado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:45 AM metro.monitor.gui.ServidorRemoto anyadeTrazasDemonio
+DETALLADO: Desde ServidorRemoto.anyadeTrazasDemonio - Añadiendo 3 trazas
+ago 19, 2016 8:54:45 AM metro.monitor.gui.EjecucionPanel notifyNewDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewDaemonTraces() - increment.size()=3
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=3
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@f16568, _datos.size()=0
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:45 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:45 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:46 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:46 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: df -k |grep /gdl
+ago 19, 2016 8:54:46 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:46 AM metro.monitor.gui.TestDisk procesaSalidaComando
+DETALLADO: COMANDO REMOTO: df -k |grep /gdl
+ago 19, 2016 8:54:46 AM metro.monitor.gui.TestDisk procesaSalidaComando
+DETALLADO: EsperaSalida = true --> SalidaComando:/gdl                     9437184     1554696     7820976    17%    /gdl
+
+ago 19, 2016 8:54:46 AM metro.monitor.gui.ServidorRemoto setPorcentajeOcupacionDisco
+MUY DETALLADO: ENTRY 17
+ago 19, 2016 8:54:46 AM metro.monitor.gui.ServidorPanel notifyDiskOccupation
+DETALLADO: ServidorPanel::notifyDiskOccupation - 17 ... actualizamos ocupacion Disco: 1
+ago 19, 2016 8:54:46 AM metro.monitor.gui.ServidorRemoto setPorcentajeOcupacionDisco
+MUY DETALLADO: RETURN 17
+ago 19, 2016 8:54:46 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:47 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:47 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=13573
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 1::setEstadoServidor - Arrancado estado antiguo: Cargando
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY MAESTRO
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 1 ha llamado a setRol con valor= MAESTRO ====> Lo actualizamos porque está Arrancado
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - MAESTRO ... actualizamos el rol gráfico del servidor: 1
+ago 19, 2016 8:54:47 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=MAESTRO
+ago 19, 2016 8:54:47 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=MAESTRO
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorPanel notifyServerStateUpdate
+DETALLADO: ServidorPanel::notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:47 AM metro.monitor.gui.CargaPanel notifyServerStateUpdate
+MÁS DETALLADO: CargaPanel.notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:47 AM metro.monitor.gui.EjecucionPanel notifyServerStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - MAESTRO EJECUTADO
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RutinaChequeoDisco <init>
+DETALLADO: RutinaChequeoDisco.RutinaChequeoDisco - hostRemoto=via2, remoteUser=gdl, localuser=P03604
+ago 19, 2016 8:54:47 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:47 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:47 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=23911
+ago 19, 2016 8:54:47 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:47 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=28137
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=10086
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+DETALLADO: Desde ServidorRemoto.compruebaEstadoReal - test1=true test2=true
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+DETALLADO: ServidorRemoto::setEstadoDemonio - Arrancado estado antiguo: Parado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 2::setEstadoServidor - Cargando estado antiguo: Parado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 2 ha llamado a setRol con valor= INDEFINIDO ====> Lo actualizamos porque estáCargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto compruebaEstadoReal
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyServerStateUpdate
+DETALLADO: ServidorPanel::notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 2
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyDiskOccupation
+DETALLADO: ServidorPanel::notifyDiskOccupation - 0 ... actualizamos ocupacion Disco: 2
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyClearLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyClearLoadTraces()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyNewLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyNewLoadTraces() - loadTraces.size()=0, increment.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyServerStateUpdate
+MÁS DETALLADO: CargaPanel.notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyClearLoadTraces
+MÁS DETALLADO: CargaPanel.notifyClearLoadTraces()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyNewLoadTraces
+MÁS DETALLADO: CargaPanel.notifyNewLoadTraces() - loadTraces.size()=0, increment.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto lanzaThreadCargaYEjecucion
+MÁS DETALLADO: ServidorRemoto.lanzaThreadCargaYEjecucion()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion inicializoTabla
+MÁS DETALLADO: TablaEjecucion.inicializoTabla()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - Error, no estamos en un JViewport
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion inicializoTabla
+MÁS DETALLADO: TablaEjecucion.inicializoTabla()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyDaemonStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyDaemonStateUpdate - newDaemonState=Arrancado
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyServerStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyServerStateUpdate - newServerState=Cargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyClearRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyClearRunTraces
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyClearDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyClearDaemonTraces
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyNewRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewRunTraces() - increment.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyNewDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewDaemonTraces() - increment.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: df -k |grep /gdl
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@89949a, _datos.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@7b37df, _datos.size()=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestDisk procesaSalidaComando
+DETALLADO: COMANDO REMOTO: df -k |grep /gdl
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TestDisk procesaSalidaComando
+DETALLADO: EsperaSalida = true --> SalidaComando:/gdl                     9437184     1205352     8167592    13%    /gdl
+
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setPorcentajeOcupacionDisco
+MUY DETALLADO: ENTRY 13
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyDiskOccupation
+DETALLADO: ServidorPanel::notifyDiskOccupation - 13 ... actualizamos ocupacion Disco: 2
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setPorcentajeOcupacionDisco
+MUY DETALLADO: RETURN 13
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=0
+ago 19, 2016 8:54:48 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ParserLogCargaActual leeTrazas
+DETALLADO: **************** Desde ParserLogCargaActual.leeTrazas - position = 0 ... llamamos:
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando false
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 2::setEstadoServidor - Cargando estado antiguo: CargandoLo ignoramos = false
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Cargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 2 ha llamado a setRol con valor= INDEFINIDO ====> Lo actualizamos porque estáCargando
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 2
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ParserLogCargaActual leeTrazas
+DETALLADO: **************** Desde ParserLogCargaActual.leeTrazas - FIN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto anyadeTrazasCarga
+DETALLADO: ServidorRemoto.anyadeTrazasCarga - Añadiendo 24 trazas
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyNewLoadTraces
+MÁS DETALLADO: ServidorPanel.notifyNewLoadTraces() - loadTraces.size()=24, increment.size()=24
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyNewLoadTraces
+MÁS DETALLADO: CargaPanel.notifyNewLoadTraces() - loadTraces.size()=24, increment.size()=24
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto anyadeTrazasEjecucion
+DETALLADO: ServidorRemoto.anyadeTrazasEjecucion - Añadiendo 48 trazas
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY ESCLAVO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 2 ha llamado a setRol con valor= ESCLAVO ====> NO Lo actualizamos porque NO está ARRANCADO, será de una ejecución antigua
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO ... actualizamos el rol gráfico del servidor: 2
+ago 19, 2016 8:54:48 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=INDEFINIDO
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:48 AM metro.monitor.gui.ServidorRemoto anyadeTrazasEjecucion
+DETALLADO: ServidorRemoto.anyadeTrazasEjecucion - ROL actualizado desde el fichero de trazas para el servidor nº:2, newRol=ESCLAVO
+
+ago 19, 2016 8:54:48 AM metro.monitor.gui.EjecucionPanel notifyNewRunTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewRunTraces() - increment.size()=48
+ago 19, 2016 8:54:49 AM metro.monitor.gui.ServidorRemoto anyadeTrazasDemonio
+DETALLADO: Desde ServidorRemoto.anyadeTrazasDemonio - Añadiendo 3 trazas
+ago 19, 2016 8:54:49 AM metro.monitor.gui.EjecucionPanel notifyNewDaemonTraces
+MÁS DETALLADO: EjecucionPanel.notifyNewDaemonTraces() - increment.size()=3
+ago 19, 2016 8:54:49 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:49 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - INDEFINIDO EJECUTADO
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=48
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@89949a, _datos.size()=0
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - trazas.size()=3
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TrazasTableModel anadoTraza
+MÁS DETALLADO: TrazasTableModel.anadoTraza() - this=metro.monitor.gui.TrazasTableModel@7b37df, _datos.size()=0
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion tableChanged
+MÁS DETALLADO: TablaEjecucion.tableChanged()
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=48
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=48
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=48
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TablaEjecucion scrollToCell
+MÁS DETALLADO: TablaEjecucion.scrollToCell() - row=3
+ago 19, 2016 8:54:49 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:49 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:49 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:49 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:49 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=13573
+ago 19, 2016 8:54:49 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:49 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:49 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:50 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:50 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=23911
+ago 19, 2016 8:54:50 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:50 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:50 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=10086
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+DETALLADO: ServidorRemoto con indice: 2::setEstadoServidor - Arrancado estado antiguo: Cargando
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: ENTRY ESCLAVO
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setRol
+DETALLADO: ServidorRemoto con indice: 2 ha llamado a setRol con valor= ESCLAVO ====> Lo actualizamos porque está Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorPanel notifyRolUpdate
+DETALLADO: ServidorPanel::notifyRolUpdate - ESCLAVO ... actualizamos el rol gráfico del servidor: 2
+ago 19, 2016 8:54:50 AM metro.monitor.gui.CargaPanel notifyRolUpdate
+DETALLADO: CargaPanel::notifyRolUpdate - newRol=ESCLAVO
+ago 19, 2016 8:54:50 AM metro.monitor.gui.EjecucionPanel notifyRolUpdate
+MÁS DETALLADO: EjecucionPanel::notifyRolUpdate - newRol=ESCLAVO
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setRol
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorPanel notifyServerStateUpdate
+DETALLADO: ServidorPanel::notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.CargaPanel notifyServerStateUpdate
+MÁS DETALLADO: CargaPanel.notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.EjecucionPanel notifyServerStateUpdate
+MÁS DETALLADO: EjecucionPanel::notifyServerStateUpdate - newServerState=Arrancado
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorPanel$14 run
+DETALLADO: ServidorPanel::notifyRolUpdate - ESCLAVO EJECUTADO
+ago 19, 2016 8:54:50 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:50 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=23911
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=28137
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:51 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=13573
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:51 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:51 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o pid -o args |grep GdlServer
+ago 19, 2016 8:54:52 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando
+ago 19, 2016 8:54:52 AM metro.monitor.gui.TestServidorTR procesaSalidaComando
+DETALLADO: TestservidorTR.procesaSalidaComando - _estaLanzado=true, PID=10086
+ago 19, 2016 8:54:52 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:52 AM metro.monitor.gui.ServidorRemoto setEstadoServidor
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:52 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=28137
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:53 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:53 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado
+ago 19, 2016 8:54:53 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:53 AM metro.monitor.gui.RutinaPingServidor run
+DETALLADO: RutinaPingServidor.run - estaConectado=true
+ago 19, 2016 8:54:53 AM metro.monitor.gui.RemoteProcess ejecutaComandoRSH
+DETALLADO: RemoteProcess.ejecutaComandoRSH
+ago 19, 2016 8:54:53 AM metro.monitor.gui.RemoteProcess ejecutar
+DETALLADO:  .............. RemoteProcess.ejecutar - ejecutando el comando: ps -ef -o comm -o pid|grep daemon_gdl
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: ENTRY
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+DETALLADO: TestDaemonTR.procesaSalidaComando - Esta Lanzado=true, PID=23911
+ago 19, 2016 8:54:53 AM metro.monitor.gui.TestDaemonTR procesaSalidaComando
+MUY DETALLADO: RETURN
+ago 19, 2016 8:54:53 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: ENTRY Arrancado
+ago 19, 2016 8:54:53 AM metro.monitor.gui.ServidorRemoto setEstadoDemonio
+MUY DETALLADO: RETURN Arrancado

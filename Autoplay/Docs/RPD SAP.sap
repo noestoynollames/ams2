@@ -1,0 +1,14 @@
+[System]
+Name=RPD
+Description=L - RPD
+Client=000
+[User]
+Name=-----
+Language=ES
+[Function]
+Title=SAP
+Command=BBP0
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

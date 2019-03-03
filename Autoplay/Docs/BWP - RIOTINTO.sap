@@ -1,0 +1,14 @@
+[System]
+Name=BWP
+Description=G - BWP
+Client=005
+[User]
+Name=--------
+Language=ES
+[Function]
+Title=- RIOTINTO
+Command=SESSION_MANAGER
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

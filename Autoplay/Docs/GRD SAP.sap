@@ -1,0 +1,14 @@
+[System]
+Name=GRD
+Description=P - GRD
+Client=000
+[User]
+Name=
+Language=ES
+[Function]
+Title=SAP
+Command=S000
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

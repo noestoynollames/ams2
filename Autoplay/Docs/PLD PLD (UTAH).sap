@@ -1,0 +1,14 @@
+[System]
+Name=PLD
+Description=O - PLD
+Client=002
+[User]
+Name=-------
+Language=ES
+[Function]
+Title=PLD (UTAH)
+Command=SESSION_MANAGER
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

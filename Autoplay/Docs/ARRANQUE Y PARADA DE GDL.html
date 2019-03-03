@@ -1,0 +1,226 @@
+<html>
+<head><title>Image map created by yEd</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n0">Siempre que se balance GDL o que se pare<br>el MAESTRO, hay que PARAR "MOREA"<br></div>
+<div class="tooltip" id="n1"> Parar morea<br></div>
+<div class="tooltip" id="n2">Comprobar los estados del servidor<br>tanto en via1 como en via2 en:<br><br>viax:/gdl&produ53/servermorea/bin#<br></div>
+<div class="tooltip" id="n3">ARRANCAR SERVIDOR GDL<br>(VIA1, VIA2) </div>
+<div class="tooltip" id="n4">ARRANQUE-PARADA  DE GDL<br>POR CONSOLA</div>
+<div class="tooltip" id="n5">ARRANQUE-PARADA MANUAL<br> DE GDL</div>
+<div class="tooltip" id="n6">COMPROBAR EL TCPD</div>
+<div class="tooltip" id="n7">¿ ESTÁ ARRANCADO EL TCPD ?</div>
+<div class="tooltip" id="n8">LANZAMOS TCPD<br></div>
+<div class="tooltip" id="n9">ARRANCAR EL DEMONIO GDL<br>(VIA1, VIA2) . (Usuario GDL)</div>
+<div class="tooltip" id="n10">1.- su - gdl<br>2.- Arrancar demonio.<br>a) Producción (viax): produ53.sh<br>b) PRE (morelos-gdl): preprod53.sh<br>c) DES (morelia-gdl):  desarr53.sh<br>d) FRM (morelos-gdl): formación_frm53.sh</div>
+<div class="tooltip" id="n11">COMPROBAR QUE EL SERVIDOR<br>ESTA LANZADO (daemon_gdl)<br></div>
+<div class="tooltip" id="n12">COMPROBAR QUE<br>SE ESTÁ CARGANDO<br></div>
+<div class="tooltip" id="n13">En el directorio de:<br>/gdl/<entorno>/servermorea/trazas<br>debe aparecer un fichero llamado<br>       carga.log  (24 pasos)</div>
+<div class="tooltip" id="n14">COMPROBAMOS CON EL COMANDO<br>/gdl/produ53/servermore/bin/comprobar.sh<br>El estado del Server en cada máquina.<br></div>
+<div class="tooltip" id="n15">¿ ES NECESARIO PARAR EL <br>   SERVIDOR ?</div>
+<div class="tooltip" id="n16">FIN</div>
+<div class="tooltip" id="n17">a) Daemon_gdl_ Es el proceso demonio <br>    que vuelve a lanzar el servidor en<br>    caso de caída. Se debe matar este<br>    proceso el primero, para evitar que<br>    este vuelva a lanzar el servidor <br>    borrando trazas.<br>b) GdlServer: Es el proceso hijo que<br>    lanza el servidor TR. Se debe matar<br>   tras matar el demonio.<br>c) Tcpd: En principio no es necesario<br>    volver a matarlo salvo casos muy<br>    puntuales.</div>
+<div class="tooltip" id="n18">COMPROBACIÓN DE LOS PROCESOS GDL:<br>ps -fe | grep tcpd<br>(/ilog/server53/bin/ultrasparc32_8_6.2/tcpd  -batch /gdl/<entorno>/servermorea/trazas/tcpd.log &)<br><br>ps -fea | egrep gdl<br>./daemon_gdl<br>GdlServer -ilsn GdlServer -ilsp /gdl/produ53/servermorea/data/dynamic_views -il<br></div>
+<div class="tooltip" id="n19">VERIFICAMOS EL LOG DEL TCPD:<br>iNFO: ILOG Server TCP daemon is<br>running on port 8000</div>
+<div class="tooltip" id="n20">PARAMOS LOS SIGUIENTES<br>PROCESOS, buscando su PID<br>mediante el comando "ps -fea | grep gdl"<br><br>1.- daemon_gdl<br>2.- GdlServer<br>3.- Tcpd (no es necesario)<br></div>
+<div class="tooltip" id="n21">ARRANQUE Y PARADA DE GDL</div>
+<div class="tooltip" id="n22">FIN</div>
+<div class="tooltip" id="n23">1.- Pulsamos el botón"LANZAR<br>      DEMONIO"  en el servidor que<br>      queremos que actúe como<br>       MAESTRO y esperamos  a que<br>       arranque (pestaña CARGA).<br><br>2.- Pulsamos el mismo botón en el<br>     servidor que actúa como ESCLAVO.<br><br>Estas acciones se pueden realizar de<br>modo manual cuando no funcione la <br>consola, se explica en el documento<br>CONTROL MANUAL DE GDL-TR<br></div>
+<div class="tooltip" id="n24">1.- Pulsamos el botón "LANZAR TCPD"<br>     en el servidor MAESTRO.<br>2.- Pulsamos el mismo botón en el<br>     servidor que actúa como ESCLAVO.<br></div>
+<div class="tooltip" id="n25">ARRANQUE TOTAL</div>
+<div class="tooltip" id="n26">1.- Pulsamos el botón "PARAR TCPD",<br>     en el servidor que actúa como<br>     ESCLAVO.<br>2.- Pulsamos el botón "PARAR TCPD",<br>     en el servidor que actúa como <br>     MAESTRO.</div>
+<div class="tooltip" id="n27">El que estaba como ESCLAVO,<br>pasa a MAESTRO y el<br>MAESTRO que hemos reiniciado<br>arranca como ESCLAVO.</div>
+<div class="tooltip" id="n28">- Se realiza un balanceo doble, cuando se<br>  quiere ACTUALIZAR SOFTWARE. <br>  También cuando se realiza un balanceo <br>  programado, que se realiza 2 veces por <br> semana M/V.</div>
+<div class="tooltip" id="n29">- El servidor que estaba como ESCLAVO<br>  pasa a ser MAESTRO y el MAESTRO  que<br>  hemos reiniciado arranca como ESCLAVO.</div>
+<div class="tooltip" id="n30">      REINICIO <br>SERVIDOR MAESTRO</div>
+<div class="tooltip" id="n31">BALANCEO DOBLE</div>
+<div class="tooltip" id="n32">BALANCEO SIMPLE<br></div>
+<div class="tooltip" id="n33">BALANCEO GDL<br></div>
+<div class="tooltip" id="n34">PARADA TOTAL</div>
+<div class="tooltip" id="n35">1.- Pulsamos el botón "PARAR DEMONIO"<br>     en el servidor ESCLAVO.<br>2.- Pulsamos el mismo botón en el<br>     servidor que actúa como MAESTRO.<br><br>De este modo ninguna de las 2 <br>máquinas intentará arrancar los<br>procesos.<br></div>
+<div class="tooltip" id="n36"> Reiniciar servidor ESCLAVO <br> y esperamos  hasta que<br> esté , arrancado.</div>
+<div class="tooltip" id="n37"> Reiniciar servidor MAESTRO.</div>
+<div class="tooltip" id="n38">Siempre que se balance GDL o que se pare<br>el MAESTRO, hay que PARAR "MOREA"<br></div>
+<div class="tooltip" id="n39">MOREA1 (4090)</div>
+<div class="tooltip" id="n40">MOREA2 (4091)</div>
+<div class="tooltip" id="n41">VIA1 (4099)</div>
+<div class="tooltip" id="n42">VIA2 (5000)</div>
+<div class="tooltip" id="n43">CONSOLA MOREA PRO<br>http://salta.metromadrid.net:50000/consolamorea</div>
+<div class="tooltip" id="n44">GDL<br>D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk</div>
+<div class="tooltip" id="n45">D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html</div>
+<div class="tooltip" id="n47">TELEFONOS:<br>INSPECTOR JEFE (G D L): 22105/22104<br>COORD.SALA (GDL Y PAGO): 31327</div>
+<div class="tooltip" id="n48">/gdl/produ53/servermorea/bin/comprobar.sh  (usuario gdl)</div>
+<div class="tooltip" id="n49">grep configurado /gdl/produ53/servermorea/trazas/gdlserver_produ.log</div>
+<div class="tooltip" id="n50">grep configurado /gdl/produ53/servermorea/trazas/gdlserver_produ.log</div>
+<div class="tooltip" id="e4">/gdl/produ53/servermorea/bin/produ53.sh  (script que arranca demonio)</div>
+<div class="tooltip" id="e6">/ilog/server53/bin/ultrasparc32_8_6.2/tcpd  -batch /gdl/<entorno>/servermorea/trazas/tcpd.log &</div>
+<div class="tooltip" id="e7">NO</div>
+<div class="tooltip" id="e8">SI</div>
+<div class="tooltip" id="e9">ps -fea |grep gdl</div>
+<div class="tooltip" id="e12">/gdl//produ53/servermorea/trazas/tail -f carga.log</div>
+<div class="tooltip" id="e13">/gdl/produ53/servermorea/bin/comprobrar.sh</div>
+<div class="tooltip" id="e14">NO</div>
+<div class="tooltip" id="e15">ps -fe |grep tcpd</div>
+<div class="tooltip" id="e16">/gdl/produ53/servermorea/trazas/cat tcpd.log |grep running</div>
+<div class="tooltip" id="e17">SI</div>
+
+<map name="image1_1">
+  <area shape="poly" coords="273,1355,337,1355,337,1350,332,1350,332,1353,332,1371,342,1371,342,1353,342,1350,337,1345,273,1345,273,1355,273,1355" alt="" onmouseover="showTooltip('e17')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,776,182,825,192,825,192,776,182,776,182,776" alt="" onmouseover="showTooltip('e16')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,684,182,717,192,717,192,684,182,684,182,684" alt="" onmouseover="showTooltip('e15')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,1387,182,1509,192,1509,192,1387,182,1387,182,1387" alt="" onmouseover="showTooltip('e14')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,1274,182,1305,192,1305,192,1274,182,1274,182,1274" alt="" onmouseover="showTooltip('e13')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,1167,182,1204,192,1204,192,1167,182,1167,182,1167" alt="" onmouseover="showTooltip('e12')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,1071,182,1108,192,1108,192,1071,182,1071,182,1071" alt="" onmouseover="showTooltip('e9')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="104,865,67,865,62,870,62,1050,67,1055,77,1055,76,1045,66,1045,67,1050,72,1050,72,870,67,870,67,875,104,875,104,865,104,865" alt="" onmouseover="showTooltip('e8')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,907,182,936,192,936,192,907,182,907,182,907" alt="" onmouseover="showTooltip('e7')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="152,977,152,997,157,1002,307,1002,312,997,312,660,307,655,278,655,278,665,307,665,307,660,302,660,302,997,307,997,307,992,157,992,157,997,162,997,162,977,152,977,152,977" alt="" onmouseover="showTooltip('e6')" onmouseout="hideTooltip()"/>
+  <area shape="poly" coords="182,592,182,629,192,629,192,592,182,592,182,592" alt="" onmouseover="showTooltip('e4')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="210,1297,557,1313" alt="" onmouseover="showTooltip('n50')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="207,417,554,434" alt="" onmouseover="showTooltip('n49')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="199,401,485,417" alt="" onmouseover="showTooltip('n48')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="772,126,1013,192" alt="" onmouseover="showTooltip('n47')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="628,141,668,164" href="D:\OPER\FLUJOS\ARRANQUE Y PARADA DE GDL.html" alt="" onmouseover="showTooltip('n45')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="657,147,689,192" href="D:\Consola de Monitorizacion GDL-TR\produccion\Monitorizacion_GDL_TR.jar - Acceso directo.lnk" alt="" onmouseover="showTooltip('n44')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="692,140,742,195" href="http://salta.metromadrid.net:50000/consolamorea" alt="" onmouseover="showTooltip('n43')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="350,343,383,378" href="D:\OPER\XWING\VIA2 (5000).lnk" alt="" onmouseover="showTooltip('n42')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="294,343,328,378" href="D:\OPER\XWING\VIA1 (4099).lnk" alt="" onmouseover="showTooltip('n41')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="85,220,118,255" href="D:\OPER\XWING\MOREA2 (4091).lnk" alt="" onmouseover="showTooltip('n40')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="25,220,59,255" href="D:\OPER\XWING\MOREA1 (4090).lnk" alt="" onmouseover="showTooltip('n39')" onmouseout="hideTooltip()" target="_blank"/>
+  <area shape="rect" coords="816,218,1057,278" alt="" onmouseover="showTooltip('n38')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1139,540,1306,591" alt="" onmouseover="showTooltip('n37')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1159,453,1318,503" alt="" onmouseover="showTooltip('n36')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1339,435,1603,560" alt="" onmouseover="showTooltip('n35')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1386,368,1533,408" alt="" onmouseover="showTooltip('n34')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1165,262,1311,334" alt="" onmouseover="showTooltip('n33')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="759,368,945,408" alt="" onmouseover="showTooltip('n32')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1144,368,1311,408" alt="" onmouseover="showTooltip('n31')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="793,428,915,468" alt="" onmouseover="showTooltip('n30')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="628,506,847,599" alt="" onmouseover="showTooltip('n29')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="920,453,1139,548" alt="" onmouseover="showTooltip('n28')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="939,615,1153,724" alt="" onmouseover="showTooltip('n27')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1341,590,1603,677" alt="" onmouseover="showTooltip('n26')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1368,707,1551,757" alt="" onmouseover="showTooltip('n25')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1338,785,1580,852" alt="" onmouseover="showTooltip('n24')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1350,876,1582,1099" alt="" onmouseover="showTooltip('n23')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="939,996,1114,1036" alt="" onmouseover="showTooltip('n22')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="479,15,905,96" alt="" onmouseover="showTooltip('n21')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="235,1379,439,1475" alt="" onmouseover="showTooltip('n20')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="85,725,289,776" alt="" onmouseover="showTooltip('n19')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="319,664,827,773" alt="" onmouseover="showTooltip('n18')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="459,1333,710,1521" alt="" onmouseover="showTooltip('n17')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="118,1517,255,1557" alt="" onmouseover="showTooltip('n16')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="100,1313,274,1387" alt="" onmouseover="showTooltip('n15')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="70,1212,303,1274" alt="" onmouseover="showTooltip('n14')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="325,1095,557,1167" alt="" onmouseover="showTooltip('n13')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="85,1116,289,1167" alt="" onmouseover="showTooltip('n12')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="85,1020,289,1071" alt="" onmouseover="showTooltip('n11')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="325,506,588,599" alt="" onmouseover="showTooltip('n10')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="105,528,269,592" alt="" onmouseover="showTooltip('n9')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="130,944,243,977" alt="" onmouseover="showTooltip('n8')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="105,833,269,907" alt="" onmouseover="showTooltip('n7')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="103,637,271,684" alt="" onmouseover="showTooltip('n6')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="21,119,352,208" alt="" onmouseover="showTooltip('n5')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1032,119,1381,215" alt="" onmouseover="showTooltip('n4')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="105,437,269,501" alt="" onmouseover="showTooltip('n3')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="97,348,282,395" alt="" onmouseover="showTooltip('n2')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="131,255,242,295" alt="" onmouseover="showTooltip('n1')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="306,245,547,305" alt="" onmouseover="showTooltip('n0')" onmouseout="hideTooltip()"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="ARRANQUE%20Y%20PARADA%20DE%20GDL1_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+</body>
+</html>

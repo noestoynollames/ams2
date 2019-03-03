@@ -1,0 +1,14 @@
+[System]
+Name=SPR
+Description=A - Producción
+Client=005
+[User]
+Name=-------
+Language=ES
+[Function]
+Title=SM51 - LISTAS DE SERVIDORES
+Command=SM51
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

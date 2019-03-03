@@ -1,0 +1,14 @@
+[System]
+Name=BWD
+Description=I - BWD
+Client=002
+[User]
+Name=-----------
+Language=ES
+[Function]
+Title=- PASADENA
+Command=SESSION_MANAGER
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1

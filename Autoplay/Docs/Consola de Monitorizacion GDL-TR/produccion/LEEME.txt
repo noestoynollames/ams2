@@ -1,0 +1,22 @@
+Para tener la nueva consola es necesario:
+
+1.- Si el PC ya ha tenido instalada la consola previamente será suficiente con hacer esto:
+
+Copiar la carpeta "produccion" (en la que está este fichero) a C:\Consola de Monitorizacion GDL-TR
+
+Copiar el fichero "mapea_unidad_via1_via2.bat" a C:\Documents and Settings\All Users\Menú Inicio\Programas\Inicio para que mapee las unidades U: y V: cada vez que arranque el sistema
+
+Copiar (si no se tiene ya) el acceso directo "Consola GDL-TR" a C:\Documents and Settings\All Users\Escritorio
+
+
+2.- Si el PC no ha tenido instalada la consola previamente, ademas de lo anterior, puede que sea necesario instalar el j2re para lo que basta ejecutar el instalador j2re-1_4_2_04-windows-i586-p.exe
+
+3.- Arrancar la aplicación:
+
+Debemos comprobar que no tenemos mapeadas las unidad U: y V: para otra cosa ya que son necesarias para la consola
+
+Ejecutar el fichero mapea_unidad_via1_via2.bat lo que nos pedira contraseña del usuario gdl y mapeará las unidades U: y V:
+
+Hacer doble click sobre el acceso directo "Consola GDL-TR" en el escritorio
+
+	

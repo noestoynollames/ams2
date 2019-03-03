@@ -1,0 +1,14 @@
+[System]
+Name=PRP
+Description=C - Pre-producción
+Client=005
+[User]
+Name=-------
+Language=ES
+[Function]
+Title=- PREPROP1
+Command=SESSION_MANAGER
+[Configuration]
+WorkDir=D:\Users\P03604\Documents\SAP\SAP GUI
+[Options]
+Reuse=1
